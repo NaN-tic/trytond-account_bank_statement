@@ -164,7 +164,7 @@ msgstr "Notas"
 
 msgctxt "field:account.bank.statement.line,reconciled:"
 msgid "Reconciled"
-msgstr "Concilado"
+msgstr "Conciliado"
 
 msgctxt "field:account.bank.statement.line,state:"
 msgid "State"
