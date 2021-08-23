@@ -7,10 +7,11 @@ from sql.aggregate import Sum
 
 from trytond.model import ModelView, fields
 from trytond.pool import Pool, PoolMeta
-from trytond.pyson import Eval, PYSONEncoder
+from trytond.pyson import PYSONEncoder
 from trytond.wizard import Wizard, StateView, StateAction, Button
 from trytond.i18n import gettext
 from trytond.exceptions import UserError
+from trytond.modules.currency.fields import Monetary
 from sql import Null
 
 
@@ -45,13 +46,11 @@ class Line(metaclass=PoolMeta):
 
     bank_lines = fields.One2Many('account.bank.reconciliation', 'move_line',
         'Conciliation Lines', readonly=True)
-    bank_amount = fields.Function(fields.Numeric('Bank Amount',
-            digits=(16, Eval('currency_digits', 2)),
-            depends=['currency_digits']),
+    bank_amount = fields.Function(Monetary('Bank Amount',
+            currency='currency', digits='currency'),
             'get_bank_amounts')
-    unreconciled_amount = fields.Function(fields.Numeric('Unreconciled Amount',
-            digits=(16, Eval('currency_digits', 2)),
-            depends=['currency_digits']),
+    unreconciled_amount = fields.Function(Monetary('Unreconciled Amount',
+            currency='currency', digits='currency'),
             'get_bank_amounts')
     bank_reconciled = fields.Function(fields.Boolean('Bank Reconciled'),
             'get_bank_amounts', searcher='search_bank_reconciled')

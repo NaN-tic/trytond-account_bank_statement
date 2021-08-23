@@ -2,10 +2,10 @@
 # copyright notices and license terms.
 from trytond.const import OPERATORS
 from trytond.model import ModelView, ModelSQL, fields
-from trytond.pyson import Eval
 from trytond.transaction import Transaction
 from trytond.i18n import gettext
 from trytond.exceptions import UserError
+from trytond.modules.currency.fields import Monetary
 
 __all__ = ['AccountBankReconciliation']
 
@@ -14,10 +14,11 @@ class AccountBankReconciliation(ModelView, ModelSQL):
     'Account Bank Reconciliation'
     __name__ = 'account.bank.reconciliation'
 
-    amount = fields.Numeric('Amount', digits=(16, Eval('currency_digits', 2)),
-        depends=['currency_digits'], required=True)
-    currency_digits = fields.Function(fields.Integer('currency digits'),
-            'get_currency_digits')
+    amount = Monetary('Amount', digits='currency', currency='currency',
+        required=True)
+    currency = fields.Function(
+        fields.Many2One('currency.currency', 'Currency'),
+        'on_change_with_currency')
     move_line = fields.Many2One('account.move.line', 'Move Line',
         required=True, readonly=True)
     bank_statement_line = fields.Many2One('account.bank.statement.line',
@@ -74,5 +75,7 @@ class AccountBankReconciliation(ModelView, ModelSQL):
         return super(AccountBankReconciliation, cls).search_domain(
             convert_domain(domain), active_test=active_test, tables=tables)
 
-    def get_currency_digits(self, name):
-        return self.move_line.account.company.currency.digits
+    @fields.depends('move_line', '_parent_move_line.account')
+    def on_change_with_currency(self, name=None):
+        if self.move_line and self.move_line.currency:
+            return self.move_line.account.company.currency.id

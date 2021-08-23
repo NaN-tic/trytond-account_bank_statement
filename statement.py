@@ -15,6 +15,7 @@ from trytond.transaction import Transaction
 from trytond import backend
 from trytond.i18n import gettext
 from trytond.exceptions import UserError
+from trytond.modules.currency.fields import Monetary
 
 __all__ = ['Statement', 'StatementLine', 'ImportStart', 'Import']
 
@@ -41,12 +42,12 @@ class Statement(Workflow, ModelSQL, ModelView):
         states=_STATES, depends=['state'], help='Start date bank statement')
     end_date = fields.Date('End Date', required=True,
         states=_STATES, depends=['state'], help='End date bank statement')
-    start_balance = fields.Numeric('Start Balance', required=True,
-        digits=(16, Eval('currency_digits', 2)),
-        states=_STATES, depends=['state', 'currency_digits'])
-    end_balance = fields.Numeric('End Balance', required=True,
-        digits=(16, Eval('currency_digits', 2)),
-        states=_STATES, depends=['state', 'currency_digits'])
+    start_balance = Monetary('Start Balance', required=True,
+        digits='currency', currency='currency',
+        states=_STATES, depends=['state'])
+    end_balance = Monetary('End Balance', required=True,
+        digits='currency', currency='currency',
+        states=_STATES, depends=['state'])
     journal = fields.Many2One('account.bank.statement.journal', 'Journal',
         required=True, domain=[
             ('company', '=', Eval('company')),
@@ -56,8 +57,9 @@ class Statement(Workflow, ModelSQL, ModelView):
         'Lines', domain=[
             ('company', '=', Eval('company')),
             ], depends=['company'])
-    currency_digits = fields.Function(fields.Integer('Currency Digits'),
-        'on_change_with_currency_digits')
+    currency = fields.Function(
+        fields.Many2One('currency.currency', 'Currency'),
+        'on_change_with_currency')
     state = fields.Selection([
             ('draft', 'Draft'),
             ('confirmed', 'Confirmed'),
@@ -129,10 +131,15 @@ class Statement(Workflow, ModelSQL, ModelView):
         return Decimal('0.0')
 
     @fields.depends('journal')
-    def on_change_with_currency_digits(self, name=None):
+    def on_change_with_currency(self, name=None):
+        Company = Pool().get('company.company')
+
         if self.journal:
-            return self.journal.currency.digits
-        return 2
+            return self.journal.currency.id
+        else:
+            company = Transaction().context.get('company')
+            if company:
+                return Company(company).currency.id
 
     @staticmethod
     def default_end_balance():
@@ -216,10 +223,8 @@ class StatementLine(sequence_ordered(), Workflow, ModelSQL, ModelView):
     description = fields.Char('Description', required=True,
         states=CONFIRMED_STATES)
     notes = fields.Char('Notes', states=POSTED_STATES)
-    amount = fields.Numeric('Amount', digits=(16, Eval('currency_digits', 2)),
-        depends=['currency_digits'], required=True, states=CONFIRMED_STATES)
-    currency_digits = fields.Function(fields.Integer('currency digits'),
-            'get_currency_digits')
+    amount = Monetary('Amount', digits='statement_currency',
+        currency='statement_currency', required=True, states=CONFIRMED_STATES)
     state = fields.Selection([
             ('draft', 'Draft'),
             ('confirmed', 'Confirmed'),
@@ -238,29 +243,23 @@ class StatementLine(sequence_ordered(), Workflow, ModelSQL, ModelView):
             'Account'), 'get_account')
     reconciled = fields.Function(fields.Boolean('Reconciled'),
         'get_accounting_vals')
-    moves_amount = fields.Function(fields.Numeric('Moves Amount',
-            digits=(16, Eval('currency_digits', 2)),
-            depends=['currency_digits']),
+    moves_amount = fields.Function(Monetary('Moves Amount',
+            digits='statement_currency', currency='statement_currency'),
             'on_change_with_moves_amount')
     journal = fields.Function(fields.Many2One('account.bank.statement.journal',
             'Journal'), 'get_journal', searcher='search_journal')
     statement_currency = fields.Function(fields.Many2One('currency.currency',
             'Statement Currency', depends=['statement', 'journal']),
-            'get_statement_currency')
+            'on_change_with_statement_currency')
     company_currency = fields.Function(fields.Many2One('currency.currency',
             'Company Currency', depends=['statement', 'journal']),
-            'get_company_currency')
-    company_moves_amount = fields.Function(fields.Numeric('Moves Amount',
-            digits=(16, Eval('company_currency_digits', 2)),
-            depends=['company_currency_digits', 'bank_lines']),
+            'on_change_with_company_currency')
+    company_moves_amount = fields.Function(Monetary('Moves Amount',
+            digits='company_currency', currency='company_currency'),
             'get_accounting_vals')
-    company_amount = fields.Function(fields.Numeric('Company Amount',
-            digits=(16, Eval('company_currency_digits', 2)),
-            depends=['company_currency_digits', 'amount']),
+    company_amount = fields.Function(Monetary('Company Amount',
+            digits='company_currency', currency='company_currency'),
             'get_accounting_vals')
-    company_currency_digits = fields.Function(
-            fields.Integer('Company Currency Digits'),
-            'get_company_currency_digits')
 
     @classmethod
     def __setup__(cls):
@@ -400,25 +399,15 @@ class StatementLine(sequence_ordered(), Workflow, ModelSQL, ModelView):
     def default_state():
         return 'draft'
 
-    @staticmethod
-    def default_currency_digits():
-        return 2
+    @fields.depends('statement', '_parent_statement.journal')
+    def on_change_with_statement_currency(self, name=None):
+        if self.statement and self.statement.journal:
+            return self.statement.journal.currency.id
 
-    @staticmethod
-    def default_company_currency_digits():
-        return 2
-
-    def get_currency_digits(self, name):
-        return self.statement_currency.digits
-
-    def get_company_currency_digits(self, name):
-        return self.company_currency.digits
-
-    def get_statement_currency(self, name):
-        return self.statement.journal.currency.id
-
-    def get_company_currency(self, name):
-        return self.statement.company.currency.id
+    @fields.depends('statement', '_parent_statement.company')
+    def on_change_with_company_currency(self, name=None):
+        if self.statement and self.statement.company:
+            return self.statement.company.currency.id
 
     def get_account(self, name):
         account = self.statement.journal.account
