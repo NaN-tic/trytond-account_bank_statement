@@ -230,7 +230,7 @@ class StatementLine(sequence_ordered(), Workflow, ModelSQL, ModelView):
         'bank_statement_line', 'Bank Lines', domain=[
             ('account', '=', Eval('account')),
             ('move_line.move.company', '=', Eval('company')),
-            ('bank_statement_line', 'in', (None, Eval('id'))),
+            ('bank_statement_line', 'in', (None, Eval('id', -1))),
             ],
         states=POSTED_STATES,
         depends=POSTED_DEPENDS + ['company', 'id', 'account'])
