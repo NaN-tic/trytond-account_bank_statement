@@ -357,7 +357,7 @@ class StatementLine(sequence_ordered(), Workflow, ModelSQL, ModelView):
                     and line.statement.company.timezone):
                 timezone = line.statement.company.timezone
                 break
-        if timezone and value:
+        if timezone and isinstance(value, datetime):
             timezone = pytz.timezone(timezone)
             date = timezone.localize(value)
             value -= date.utcoffset()
