@@ -598,7 +598,11 @@ class Import(Wizard):
             return
         BankStatementLine = Pool().get('account.bank.statement.line')
 
-        csv_file = StringIO(self.start.import_file.decode('utf-8'))
+        try:
+            csv_file = StringIO(self.start.import_file.decode('utf-8'))
+        except csv.Error as e:
+            raise UserError(gettext('account_bank_statement.format_error',
+                error=str(e)))
         try:
             reader = csv.reader(csv_file)
         except csv.Error as e:
