@@ -636,6 +636,6 @@ class Import(Wizard):
             text = text.replace(decimal_separator, '.')
         try:
             return Decimal(text)
-        except ValueError, decimal.InvalidOperation:
+        except (ValueError, decimal.InvalidOperation):
             raise UserError(gettext('account_bank_statement.invalid_number',
                 number=text))
