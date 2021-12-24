@@ -4,6 +4,7 @@ from datetime import datetime
 import pytz
 import csv
 from io import StringIO
+import decimal
 from decimal import Decimal
 from trytond.model import Workflow, ModelView, ModelSQL, fields, \
     sequence_ordered
@@ -635,6 +636,6 @@ class Import(Wizard):
             text = text.replace(decimal_separator, '.')
         try:
             return Decimal(text)
-        except ValueError:
+        except ValueError, decimal.InvalidOperation:
             raise UserError(gettext('account_bank_statement.invalid_number',
                 number=text))
