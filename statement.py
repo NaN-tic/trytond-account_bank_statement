@@ -218,8 +218,8 @@ class StatementLine(sequence_ordered(), Workflow, ModelSQL, ModelView):
         states=CONFIRMED_STATES, depends=CONFIRMED_DEPENDS + ['company'])
     company = fields.Many2One('company.company', 'Company', required=True,
         select=True, states=CONFIRMED_STATES)
-    date = fields.Function(fields.DateTime('Date', required=True), 'get_date_utc',
-        searcher='search_date_utc', setter='set_date_utc')
+    date = fields.Function(fields.DateTime('Date', required=True),
+        'get_date_utc', searcher='search_date_utc', setter='set_date_utc')
     date_utc = fields.DateTime('Date UTC', states=CONFIRMED_STATES)
     description = fields.Char('Description', required=True,
         states=CONFIRMED_STATES)
@@ -329,7 +329,7 @@ class StatementLine(sequence_ordered(), Workflow, ModelSQL, ModelView):
         # get date + UTC
         result = {}
         for name in names:
-            result[name] = dict((l.id, None) for l in lines)
+            result[name] = dict((x.id, None) for x in lines)
 
         for line in lines:
             for name in names:
@@ -371,7 +371,7 @@ class StatementLine(sequence_ordered(), Workflow, ModelSQL, ModelView):
         BankLines = Pool().get('account.bank.reconciliation')
         lines = BankLines.search([
                 ('amount', '=', self.company_amount),
-                ('account', '=', self.account.id),
+                ('move_line.account', '=', self.account.id),
                 ('bank_statement_line', '=', None),
                 ])
         if len(lines) == 1:
@@ -417,7 +417,7 @@ class StatementLine(sequence_ordered(), Workflow, ModelSQL, ModelView):
     @classmethod
     def get_accounting_vals(cls, lines, names):
         res = {}
-        line_ids = [l.id for l in lines]
+        line_ids = [x.id for x in lines]
         for name in names:
             value = False if name == 'reconciled' else Decimal('0.0')
             res[name] = {}.fromkeys(line_ids, value)
@@ -577,7 +577,8 @@ class Import(Wizard):
 
         statement = BankStatement(active_id)
         if statement.lines:
-            raise UserError(gettext('account_bank_statement_already_has_lines'))
+            raise UserError(
+                gettext('account_bank_statement_already_has_lines'))
 
         self.process(statement)
 
@@ -637,7 +638,7 @@ class Import(Wizard):
 
     def string_to_number(self, text, decimal_separator='.',
             thousands_separator=','):
-        text = text.replace(thousands_separator,'')
+        text = text.replace(thousands_separator, '')
         if decimal_separator != '.':
             text = text.replace(decimal_separator, '.')
         try:
