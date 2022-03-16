@@ -329,6 +329,10 @@ msgctxt ""
 msgid "Unreconcile"
 msgstr "Sin conciliar"
 
+msgctxt "model:ir.message,text:account_bank_statement_already_has_lines"
+msgid "Statement \"%(statement)s\" already has lines."
+msgstr "El extracto \"%(statement)s\" contiene líneas."
+
 msgctxt "model:ir.message,text:cannot_cancel_statement_line"
 msgid "Line \"%(line)s\" cannot be cancelled."
 msgstr "La línea \"%(line)s\" no se puede cancelar."

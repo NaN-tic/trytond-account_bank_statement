@@ -47,5 +47,8 @@ This is the technical error returned by parser:
       <record model="ir.message" id="line_reconciled">
           <field name="text">Line "%(line)s" already reconciled with bank statement line "%(statment_line)s" with amount "%(amount)s". Please remove bank conciliation and try again.</field>
       </record>
-      </data>
+      <record model="ir.message" id="account_bank_statement_already_has_lines">
+          <field name="text">Statement "%(statement)s" already has lines.</field>
+      </record>
+    </data>
 </tryton>
