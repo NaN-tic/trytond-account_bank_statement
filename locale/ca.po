@@ -329,13 +329,17 @@ msgctxt ""
 msgid "Unreconcile"
 msgstr "Sense conciliar"
 
+msgctxt "model:ir.message,text:account_bank_statement_already_has_lines"
+msgid "Statement \"%(statement)s\" already has lines."
+msgstr "L'extracte \"%(statement)s\" ja conté línies."
+
 msgctxt "model:ir.message,text:cannot_cancel_statement_line"
 msgid "Line \"%(line)s\" cannot be cancelled."
 msgstr "La línia \"%(line)s\" no es pot cancel·lar."
 
 msgctxt "model:ir.message,text:cannot_delete_statement"
 msgid "Statement \"%(statement)s\" cannot be deleted because it contains lines."
-msgstr "El extracte \"%(statement)s\" no es pot eliminar perquè conté línies."
+msgstr "L'extracte \"%(statement)s\" no es pot eliminar perquè conté línies."
 
 msgctxt "model:ir.message,text:cannot_delete_statement_line"
 msgid ""

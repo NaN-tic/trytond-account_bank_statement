@@ -578,7 +578,8 @@ class Import(Wizard):
         statement = BankStatement(active_id)
         if statement.lines:
             raise UserError(
-                gettext('account_bank_statement_already_has_lines'))
+                gettext('account_bank_statement.account_bank_statement_already_has_lines',
+                    statement=statement.rec_name))
 
         self.process(statement)
 
