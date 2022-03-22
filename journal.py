@@ -17,7 +17,11 @@ class BankJournal(ModelSQL, ModelView):
     journal = fields.Many2One('account.journal', 'Journal', required=True,
         domain=[
             ('type', '=', 'cash'),
-            ])
+            ],
+        context={
+            'company': Eval('company'),
+            },
+        depends=['company'])
     currency = fields.Many2One('currency.currency', 'Currency', required=True)
     company = fields.Many2One('company.company', 'Company', required=True,
             select=True)

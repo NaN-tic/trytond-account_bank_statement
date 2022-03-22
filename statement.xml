@@ -276,7 +276,7 @@
         </record>
         <record model="ir.rule" id="rule_bank_statement1">
             <field name="domain"
-                eval="[('company', '=', Eval('user', {}).get('company', None))]"
+                eval="[('company', 'in', Eval('companies', []))]"
                 pyson="1"/>
             <field name="rule_group" ref="rule_group_bank_statement"/>
         </record>
@@ -288,7 +288,7 @@
         </record>
         <record model="ir.rule" id="rule_bank_statement_line1">
             <field name="domain"
-                eval="[('company', '=', Eval('user', {}).get('company', None))]"
+                eval="[('company', 'in', Eval('companies', []))]"
                 pyson="1"/>
             <field name="rule_group" ref="rule_group_bank_statement_line"/>
         </record>
