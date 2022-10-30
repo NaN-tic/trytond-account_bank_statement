@@ -19,9 +19,6 @@
         <record model="ir.action.act_window" id="act_open_bank_statement_line_form">
             <field name="name">Bank Statement Line</field>
             <field name="res_model">account.bank.statement.line</field>
-            <field name="domain"
-                eval="[If(Eval('active_ids', []) == [Eval('active_id')], ('bank_lines.move_line', '=', Eval('active_id')), ('bank_lines.move_line', 'in', Eval('active_ids')))]"
-                pyson="1"/>
         </record>
         <record model="ir.action.keyword" id="act_open_bank_statement_line_from_line_keyword1">
             <field name="keyword">form_relate</field>

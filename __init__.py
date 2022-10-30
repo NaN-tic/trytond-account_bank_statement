@@ -4,7 +4,6 @@
 from trytond.pool import Pool
 from . import statement
 from . import move
-from . import reconciliation
 from . import account
 from . import journal
 
@@ -15,9 +14,7 @@ def register():
         statement.Statement,
         statement.StatementLine,
         statement.ImportStart,
-        reconciliation.AccountBankReconciliation,
         move.Line,
-        move.Move,
         account.AccountTemplate,
         account.Account,
         move.OpenBankReconcileLinesStart,
