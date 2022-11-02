@@ -17,9 +17,7 @@ def register():
         move.Line,
         account.AccountTemplate,
         account.Account,
-        move.OpenBankReconcileLinesStart,
         module='account_bank_statement', type_='model')
     Pool.register(
         statement.Import,
-        move.OpenBankReconcileLines,
         module='account_bank_statement', type_='wizard')

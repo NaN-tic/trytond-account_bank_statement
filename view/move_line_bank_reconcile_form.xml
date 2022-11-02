@@ -36,14 +36,6 @@ this repository contains the full copyright notices and license terms. -->
         <page name="tax_lines">
             <field name="tax_lines" colspan="4"/>
         </page>
-        <page name="bank_lines">
-            <label name="bank_amount"/>
-            <field name="bank_amount"/>
-            <label name="unreconciled_amount"/>
-            <field name="unreconciled_amount"/>
-            <label name="bank_reconciled"/>
-            <field name="bank_reconciled"/>
-        </page>
     </notebook>
     <label name="move_state"/>
     <field name="move_state"/>

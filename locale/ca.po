@@ -158,18 +158,6 @@ msgctxt "field:account.bank.statement.line,statement_currency:"
 msgid "Statement Currency"
 msgstr "Moneda de l'extracte"
 
-msgctxt "field:account.move.line,bank_amount:"
-msgid "Bank Amount"
-msgstr "Import de banc"
-
-msgctxt "field:account.move.line,bank_reconciled:"
-msgid "Bank Reconciled"
-msgstr "Conciliat bancàriament"
-
-msgctxt "field:account.move.line,unreconciled_amount:"
-msgid "Unreconciled Amount"
-msgstr "Import sense conciliar"
-
 msgctxt "field:account.move.open_bank_reconcile_lines.start,account:"
 msgid "Account"
 msgstr "Compte"
