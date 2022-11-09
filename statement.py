@@ -36,7 +36,7 @@ class Statement(Workflow, ModelSQL, ModelView):
     'Bank Statement'
     __name__ = 'account.bank.statement'
     company = fields.Many2One('company.company', 'Company', required=True,
-        states=_STATES, depends=['state'], select=True)
+        states=_STATES, depends=['state'])
     date = fields.DateTime('Date', required=True, states=_STATES,
         depends=['state'], help='Created date bank statement')
     start_date = fields.Date('Start Date', required=True,
@@ -217,7 +217,7 @@ class StatementLine(sequence_ordered(), Workflow, ModelSQL, ModelView):
             ],
         states=CONFIRMED_STATES, depends=CONFIRMED_DEPENDS + ['company'])
     company = fields.Many2One('company.company', 'Company', required=True,
-        select=True, states=CONFIRMED_STATES)
+        states=CONFIRMED_STATES)
     date = fields.Function(fields.DateTime('Date', required=True),
         'get_date_utc', searcher='search_date_utc', setter='set_date_utc')
     date_utc = fields.DateTime('Date UTC', states=CONFIRMED_STATES)

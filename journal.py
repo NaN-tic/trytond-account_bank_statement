@@ -23,8 +23,7 @@ class BankJournal(ModelSQL, ModelView):
             },
         depends=['company'])
     currency = fields.Many2One('currency.currency', 'Currency', required=True)
-    company = fields.Many2One('company.company', 'Company', required=True,
-            select=True)
+    company = fields.Many2One('company.company', 'Company', required=True)
     account = fields.Many2One('account.account', "Account", required=True,
         domain=[
             ('bank_reconcile', '=', True),
