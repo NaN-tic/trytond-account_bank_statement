@@ -293,64 +293,6 @@
             <field name="rule_group" ref="rule_group_bank_statement_line"/>
         </record>
 
-        <!-- Wizard Open Reconcile Banks Lines -->
-        <record model="ir.ui.view" id="open_reconcile_bank_lines_start_view_form">
-            <field name="model">account.move.open_bank_reconcile_lines.start</field>
-            <field name="type">form</field>
-            <field name="name">open_reconcile_bank_lines_start_form</field>
-        </record>
-
-        <record model="ir.action.wizard" id="act_open_reconcile_bank_lines">
-            <field name="name">Open Bank Reconcile Lines</field>
-            <field name="wiz_name">account.move.open_bank_reconcile_lines</field>
-        </record>
-        <menuitem name="Reconcile Bank Lines" parent="account.menu_entries"
-            action="act_open_reconcile_bank_lines"
-            id="menu_open_reconcile_bank_lines"/>
-
-        <record model="ir.ui.view" id="move_line_bank_reconcile_view_tree">
-            <field name="model">account.move.line</field>
-            <field name="type">tree</field>
-            <field name="priority" eval="20"/>
-            <field name="name">move_line_bank_reconcile_tree</field>
-        </record>
-        <record model="ir.ui.view" id="move_line_bank_reconcile_view_form">
-            <field name="model">account.move.line</field>
-            <field name="type">form</field>
-            <field name="priority" eval="20"/>
-            <field name="name">move_line_bank_reconcile_form</field>
-        </record>
-
-        <record model="ir.action.act_window" id="act_move_line_bank_reconcile_form">
-            <field name="name">Account Move Lines Bank Reconcile</field>
-            <field name="res_model">account.move.line</field>
-        </record>
-        <record model="ir.action.act_window.view" id="act_move_line_bank_reconcile_tree_view">
-            <field name="sequence" eval="60"/>
-            <field name="view" ref="move_line_bank_reconcile_view_tree"/>
-            <field name="act_window" ref="act_move_line_bank_reconcile_form"/>
-        </record>
-        <record model="ir.action.act_window.view" id="act_move_line_bank_reconcile_form_view">
-            <field name="sequence" eval="60"/>
-            <field name="view" ref="move_line_bank_reconcile_view_form"/>
-            <field name="act_window" ref="act_move_line_bank_reconcile_form"/>
-        </record>
-
-        <record model="ir.action.act_window.domain" id="act_move_bank_reconclie_domain_unreconcile">
-            <field name="name">Unreconcile</field>
-            <field name="sequence" eval="100"/>
-            <field name="domain"
-                eval="[('bank_reconciled', '=', False)]"
-                pyson="1"/>
-            <field name="act_window" ref="act_move_line_bank_reconcile_form"/>
-        </record>
-        <record model="ir.action.act_window.domain" id="act_move_bank_reconclie_domain_all">
-            <field name="name">All</field>
-            <field name="sequence" eval="9999"/>
-            <field name="domain"></field>
-            <field name="act_window" ref="act_move_line_bank_reconcile_form"/>
-        </record>
-
         <record model="ir.ui.view" id="import_start_view_form">
             <field name="model">account.bank.statement.import.start</field>
             <field name="type">form</field>
