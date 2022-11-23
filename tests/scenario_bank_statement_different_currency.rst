@@ -121,12 +121,6 @@ Create Bank Statement Lines::
     >>> statement_line.state
     'confirmed'
 
-Post line::
-
-    >>> statement_line.click('post')
-    >>> statement_line.state
-    'posted'
-
 Cancel line::
 
     >>> statement_line.click('cancel')
