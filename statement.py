@@ -367,10 +367,14 @@ class StatementLine(sequence_ordered(), Workflow, ModelSQL, ModelView):
             name + '_utc': value,
             })
 
+    def _search_reconciliation(self):
+        pass
+
     @classmethod
     @ModelView.button
     def search_reconcile(cls, st_lines):
-        pass
+        for st_line in st_lines:
+            st_line._search_reconciliation()
 
     @staticmethod
     def default_company():
