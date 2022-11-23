@@ -10,8 +10,5 @@ this repository contains the full copyright notices and license terms. -->
     <field name="account"/>
     <field name="debit" sum="Debit"/>
     <field name="credit" sum="Credit"/>
-    <field name="bank_amount" sum="Bank Amount"/>
-    <field name="unreconciled_amount" sum="Unreconciled Bank Amount"/>
-    <field name="bank_reconciled"/>
     <field name="state"/>
 </tree>
