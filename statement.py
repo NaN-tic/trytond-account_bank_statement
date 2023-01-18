@@ -231,8 +231,8 @@ class StatementLine(sequence_ordered(), Workflow, ModelSQL, ModelView):
     description = fields.Char('Description', required=True,
         states=CONFIRMED_STATES)
     notes = fields.Char('Notes', states=POSTED_STATES)
-    amount = Monetary('Amount', digits='statement_currency',
-        currency='statement_currency', required=True, states=CONFIRMED_STATES)
+    amount = Monetary('Amount', digits='company_currency',
+        currency='company_currency', required=True, states=CONFIRMED_STATES)
     state = fields.Selection([
             ('draft', 'Draft'),
             ('confirmed', 'Confirmed'),
@@ -244,7 +244,7 @@ class StatementLine(sequence_ordered(), Workflow, ModelSQL, ModelView):
     reconciled = fields.Function(fields.Boolean('Reconciled'),
         'get_accounting_vals')
     moves_amount = fields.Function(Monetary('Moves Amount',
-            digits='statement_currency', currency='statement_currency'),
+            digits='company_currency', currency='company_currency'),
             'on_change_with_moves_amount')
     journal = fields.Function(fields.Many2One('account.bank.statement.journal',
             'Journal'), 'get_journal', searcher='search_journal')
