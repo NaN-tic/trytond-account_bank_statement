@@ -232,7 +232,7 @@ class StatementLine(sequence_ordered(), Workflow, ModelSQL, ModelView):
         states=CONFIRMED_STATES)
     notes = fields.Char('Notes', states=POSTED_STATES)
     amount = Monetary('Amount', digits='company_currency',
-        currency='company_currency', required=True, states=CONFIRMED_STATES)
+        currency='statement_currency', required=True, states=CONFIRMED_STATES)
     state = fields.Selection([
             ('draft', 'Draft'),
             ('confirmed', 'Confirmed'),
