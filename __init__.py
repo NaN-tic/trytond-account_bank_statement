@@ -14,6 +14,7 @@ def register():
         statement.Statement,
         statement.StatementLine,
         statement.ImportStart,
+        move.Move,
         move.Line,
         account.AccountTemplate,
         account.Account,
