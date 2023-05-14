@@ -3,6 +3,16 @@
 from trytond.pool import PoolMeta
 
 
+class Move(metaclass=PoolMeta):
+    __name__ = 'account.move'
+
+    @classmethod
+    def _get_origin(cls):
+        'Return list of Model names for origin Reference'
+        return (super(Move, cls)._get_origin()
+            + ['account.bank.statement'])
+
+
 class Line(metaclass=PoolMeta):
     __name__ = 'account.move.line'
 
