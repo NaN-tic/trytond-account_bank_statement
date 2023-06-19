@@ -10,7 +10,7 @@ class Move(metaclass=PoolMeta):
     def _get_origin(cls):
         'Return list of Model names for origin Reference'
         return (super(Move, cls)._get_origin()
-            + ['account.bank.statement'])
+            + ['account.bank.statement', 'account.bank.statement.line'])
 
 
 class Line(metaclass=PoolMeta):
