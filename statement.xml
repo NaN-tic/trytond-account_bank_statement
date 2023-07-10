@@ -151,11 +151,11 @@
             <field name="act_window" ref="act_account_bank_statement"/>
         </record>
         <record model="ir.action.act_window.domain"
-            id="act_account_bank_statement_domain_canceled">
-            <field name="name">Canceled</field>
+            id="act_account_bank_statement_domain_cancelled">
+            <field name="name">Cancelled</field>
             <field name="sequence" eval="30"/>
             <field name="domain"
-                eval="[('state', '=', 'canceled')]"
+                eval="[('state', '=', 'cancelled')]"
                 pyson="1"/>
             <field name="act_window" ref="act_account_bank_statement"/>
         </record>
@@ -220,11 +220,11 @@
             <field name="act_window" ref="act_account_bank_statement_line"/>
         </record>
         <record model="ir.action.act_window.domain"
-            id="act_account_bank_statement_line_domain_canceled">
-            <field name="name">Canceled</field>
+            id="act_account_bank_statement_line_domain_cancelled">
+            <field name="name">Cancelled</field>
             <field name="sequence" eval="30"/>
             <field name="domain"
-                eval="[('state', '=', 'canceled')]"
+                eval="[('state', '=', 'cancelled')]"
                 pyson="1"/>
             <field name="act_window" ref="act_account_bank_statement_line"/>
         </record>
