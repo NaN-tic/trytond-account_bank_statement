@@ -572,6 +572,9 @@ class Import(Wizard):
         except csv.Error as e:
             raise UserError(gettext('account_bank_statement.format_error',
                 error=str(e)))
+        except UnicodeDecodeError:
+            raise UserError(gettext('account_bank_statement.unicode_error'))
+
         try:
             reader = csv.reader(csv_file)
         except csv.Error as e:
