@@ -23,6 +23,9 @@ this repository contains the full copyright notices and license terms. -->
 This is the technical error returned by parser:
 %(error)s.</field>
       </record>
+      <record model="ir.message" id="unicode_error">
+          <field name="text">The supplied file has Unicode Error and can not load. Check that the file is utf-8.</field>
+      </record>
       <record model="ir.message" id="invalid_date">
           <field name="text">Invalid string for date: %(date)s</field>
       </record>
