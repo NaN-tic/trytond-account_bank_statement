@@ -19,7 +19,7 @@ class BankJournal(ModelSQL, ModelView):
             ('type', '=', 'cash'),
             ],
         context={
-            'company': Eval('company'),
+            'company': Eval('company', -1),
             },
         depends=['company'])
     currency = fields.Many2One('currency.currency', 'Currency', required=True)
