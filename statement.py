@@ -51,12 +51,12 @@ class Statement(Workflow, ModelSQL, ModelView):
         states=_STATES, depends=['state'])
     journal = fields.Many2One('account.bank.statement.journal', 'Journal',
         required=True, domain=[
-            ('company', '=', Eval('company')),
+            ('company', '=', Eval('company', -1)),
             ],
         states=_STATES, depends=['state', 'company'])
     lines = fields.One2Many('account.bank.statement.line', 'statement',
         'Lines', domain=[
-            ('company', '=', Eval('company')),
+            ('company', '=', Eval('company', -1)),
             ], depends=['company'])
     currency = fields.Function(
         fields.Many2One('currency.currency', 'Currency'),
@@ -220,7 +220,7 @@ class StatementLine(sequence_ordered(), Workflow, ModelSQL, ModelView):
 
     statement = fields.Many2One('account.bank.statement', 'Statement',
         required=True, domain=[
-            ('company', '=', Eval('company')),
+            ('company', '=', Eval('company', -1)),
             ],
         states=CONFIRMED_STATES, depends=CONFIRMED_DEPENDS + ['company'])
     company = fields.Many2One('company.company', 'Company', required=True,
