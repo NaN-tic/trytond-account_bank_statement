@@ -36,13 +36,13 @@ class Statement(Workflow, ModelSQL, ModelView):
     'Bank Statement'
     __name__ = 'account.bank.statement'
     company = fields.Many2One('company.company', 'Company', required=True,
-        states=_STATES, depends=['state'])
+        states=_STATES)
     date = fields.DateTime('Date', required=True, states=_STATES,
         depends=['state'], help='Created date bank statement')
     start_date = fields.Date('Start Date', required=True,
-        states=_STATES, depends=['state'], help='Start date bank statement')
+        states=_STATES, help='Start date bank statement')
     end_date = fields.Date('End Date', required=True,
-        states=_STATES, depends=['state'], help='End date bank statement')
+        states=_STATES, help='End date bank statement')
     start_balance = Monetary('Start Balance', required=True,
         digits='currency', currency='currency',
         states=_STATES, depends=['state'])
@@ -53,11 +53,11 @@ class Statement(Workflow, ModelSQL, ModelView):
         required=True, domain=[
             ('company', '=', Eval('company', -1)),
             ],
-        states=_STATES, depends=['state', 'company'])
+        states=_STATES)
     lines = fields.One2Many('account.bank.statement.line', 'statement',
         'Lines', domain=[
             ('company', '=', Eval('company', -1)),
-            ], depends=['company'])
+            ])
     currency = fields.Function(
         fields.Many2One('currency.currency', 'Currency'),
         'on_change_with_currency')
@@ -249,10 +249,10 @@ class StatementLine(sequence_ordered(), Workflow, ModelSQL, ModelView):
     journal = fields.Function(fields.Many2One('account.bank.statement.journal',
             'Journal'), 'get_journal', searcher='search_journal')
     statement_currency = fields.Function(fields.Many2One('currency.currency',
-            'Statement Currency', depends=['statement', 'journal']),
+            'Statement Currency'),
             'on_change_with_statement_currency')
     company_currency = fields.Function(fields.Many2One('currency.currency',
-            'Company Currency', depends=['statement', 'journal']),
+            'Company Currency'),
             'on_change_with_company_currency')
     company_moves_amount = fields.Function(Monetary('Moves Amount',
             digits='company_currency', currency='company_currency'),
