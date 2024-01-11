@@ -21,7 +21,6 @@ from trytond.modules.currency.fields import Monetary
 __all__ = ['Statement', 'StatementLine', 'ImportStart', 'Import']
 
 _STATES = {'readonly': Eval('state') != 'draft'}
-_DEPENDS = ['state']
 CONFIRMED_STATES = {
     'readonly': Not(Equal(Eval('state'), 'draft'))
     }
@@ -38,17 +37,17 @@ class Statement(Workflow, ModelSQL, ModelView):
     company = fields.Many2One('company.company', 'Company', required=True,
         states=_STATES)
     date = fields.DateTime('Date', required=True, states=_STATES,
-        depends=['state'], help='Created date bank statement')
+        help='Created date bank statement')
     start_date = fields.Date('Start Date', required=True,
         states=_STATES, help='Start date bank statement')
     end_date = fields.Date('End Date', required=True,
         states=_STATES, help='End date bank statement')
     start_balance = Monetary('Start Balance', required=True,
         digits='currency', currency='currency',
-        states=_STATES, depends=['state'])
+        states=_STATES)
     end_balance = Monetary('End Balance', required=True,
         digits='currency', currency='currency',
-        states=_STATES, depends=['state'])
+        states=_STATES)
     journal = fields.Many2One('account.bank.statement.journal', 'Journal',
         required=True, domain=[
             ('company', '=', Eval('company', -1)),
@@ -222,7 +221,7 @@ class StatementLine(sequence_ordered(), Workflow, ModelSQL, ModelView):
         required=True, domain=[
             ('company', '=', Eval('company', -1)),
             ],
-        states=CONFIRMED_STATES, depends=CONFIRMED_DEPENDS + ['company'])
+        states=CONFIRMED_STATES)
     company = fields.Many2One('company.company', 'Company', required=True,
         states=CONFIRMED_STATES)
     date = fields.Function(fields.DateTime('Date', required=True),
