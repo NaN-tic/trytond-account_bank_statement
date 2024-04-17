@@ -20,7 +20,7 @@
         <record model="ir.model.button" id="statement_search_reconcile_button">
             <field name="name">search_reconcile</field>
             <field name="string">Search</field>
-            <field name="model" search="[('model', '=', 'account.bank.statement.line')]"/>
+            <field name="model">account.bank.statement.line</field>
         </record>
         <record model="ir.model.button-res.group"
             id="statement_search_reconcile_button_group_account">
@@ -31,7 +31,7 @@
         <record model="ir.model.button" id="statement_confirm_button">
             <field name="name">confirm</field>
             <field name="string">Confirm</field>
-            <field name="model" search="[('model', '=', 'account.bank.statement')]"/>
+            <field name="model">account.bank.statement</field>
         </record>
         <record model="ir.model.button-res.group"
             id="statement_confirm_button_group_account">
@@ -42,7 +42,7 @@
         <record model="ir.model.button" id="statement_draft_button">
             <field name="name">draft</field>
             <field name="string">Draft</field>
-            <field name="model" search="[('model', '=', 'account.bank.statement')]"/>
+            <field name="model">account.bank.statement</field>
         </record>
 
         <record model="ir.model.button-res.group"
@@ -54,7 +54,7 @@
         <record model="ir.model.button" id="statement_cancel_button">
             <field name="name">cancel</field>
             <field name="string">Cancel</field>
-            <field name="model" search="[('model', '=', 'account.bank.statement')]"/>
+            <field name="model">account.bank.statement</field>
         </record>
         <record model="ir.model.button-res.group"
             id="statement_cancel_button_group_account">
@@ -65,7 +65,7 @@
         <record model="ir.model.button" id="statement_line_confirm_button">
             <field name="name">confirm</field>
             <field name="string">Confirm</field>
-            <field name="model" search="[('model', '=', 'account.bank.statement.line')]"/>
+            <field name="model">account.bank.statement.line</field>
         </record>
         <record model="ir.model.button-res.group"
             id="statement_line_confirm_button_group_account">
@@ -76,7 +76,7 @@
         <record model="ir.model.button" id="statement_line_post_button">
             <field name="name">post</field>
             <field name="string">Post</field>
-            <field name="model" search="[('model', '=', 'account.bank.statement.line')]"/>
+            <field name="model">account.bank.statement.line</field>
         </record>
         <record model="ir.model.button-res.group"
             id="statement_line_post_button_group_account">
@@ -87,7 +87,7 @@
         <record model="ir.model.button" id="statement_line_cancel_button">
             <field name="name">cancel</field>
             <field name="string">Cancel</field>
-            <field name="model" search="[('model', '=', 'account.bank.statement.line')]"/>
+            <field name="model">account.bank.statement.line</field>
         </record>
         <record model="ir.model.button-res.group"
             id="statement_line_cancel_button_group_account">
@@ -98,7 +98,7 @@
         <record model="ir.model.button" id="statement_line_draft_button">
             <field name="name">draft</field>
             <field name="string">Draft</field>
-            <field name="model" search="[('model', '=', 'account.bank.statement.line')]"/>
+            <field name="model">account.bank.statement.line</field>
         </record>
         <record model="ir.model.button-res.group"
             id="statement_line_draft_button_group_account">
@@ -238,14 +238,14 @@
 
         <!-- Permissions -->
         <record model="ir.model.access" id="access_account_bank_statement">
-            <field name="model" search="[('model', '=', 'account.bank.statement')]"/>
+            <field name="model">account.bank.statement</field>
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="False"/>
             <field name="perm_create" eval="False"/>
             <field name="perm_delete" eval="False"/>
         </record>
         <record model="ir.model.access" id="access_account_bank_statement_admin">
-            <field name="model" search="[('model', '=', 'account.bank.statement')]"/>
+            <field name="model">account.bank.statement</field>
             <field name="group" ref="group_account_bank_statement_admin"/>
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="True"/>
@@ -254,14 +254,14 @@
         </record>
 
         <record model="ir.model.access" id="access_account_bank_statement_line">
-            <field name="model" search="[('model', '=', 'account.bank.statement.line')]"/>
+            <field name="model">account.bank.statement.line</field>
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="False"/>
             <field name="perm_create" eval="False"/>
             <field name="perm_delete" eval="False"/>
         </record>
         <record model="ir.model.access" id="access_account_bank_statement_line_admin">
-            <field name="model" search="[('model', '=', 'account.bank.statement.line')]"/>
+            <field name="model">account.bank.statement.line</field>
             <field name="group" ref="group_account_bank_statement_admin"/>
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="True"/>
@@ -271,7 +271,7 @@
 
         <record model="ir.rule.group" id="rule_group_bank_statement">
             <field name="name">Bank Statement</field>
-            <field name="model" search="[('model', '=', 'account.bank.statement')]"/>
+            <field name="model">account.bank.statement</field>
             <field name="global_p" eval="True"/>
         </record>
         <record model="ir.rule" id="rule_bank_statement1">
@@ -283,7 +283,7 @@
 
         <record model="ir.rule.group" id="rule_group_bank_statement_line">
             <field name="name">Bank Statement Line</field>
-            <field name="model" search="[('model', '=', 'account.bank.statement.line')]"/>
+            <field name="model">account.bank.statement.line</field>
             <field name="global_p" eval="True"/>
         </record>
         <record model="ir.rule" id="rule_bank_statement_line1">
