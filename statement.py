@@ -135,7 +135,7 @@ class Statement(Workflow, ModelSQL, ModelView):
 
     @staticmethod
     def default_start_balance():
-        return Decimal('0.0')
+        return Decimal(0)
 
     @fields.depends('journal')
     def on_change_with_currency(self, name=None):
@@ -150,7 +150,7 @@ class Statement(Workflow, ModelSQL, ModelView):
 
     @staticmethod
     def default_end_balance():
-        return Decimal('0.0')
+        return Decimal(0)
 
     def get_rec_name(self, name):
         return '%s' % (self.date.strftime("%Y-%m-%d"))
@@ -405,7 +405,7 @@ class StatementLine(sequence_ordered(), Workflow, ModelSQL, ModelView):
         res = {}
         line_ids = [x.id for x in lines]
         for name in names:
-            value = False if name == 'reconciled' else Decimal('0.0')
+            value = False if name == 'reconciled' else Decimal(0)
             res[name] = {}.fromkeys(line_ids, value)
 
         Currency = Pool().get('currency.currency')
@@ -425,7 +425,7 @@ class StatementLine(sequence_ordered(), Workflow, ModelSQL, ModelView):
 
     @fields.depends('company_currency')
     def on_change_with_moves_amount(self, name=None):
-        return Decimal('0.0')
+        return Decimal(0)
 
     @classmethod
     @ModelView.button
