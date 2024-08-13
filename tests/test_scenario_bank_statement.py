@@ -1,8 +1,3 @@
-# ===============================
-# Account Bank Statement Scenario
-# ===============================
-
-# Imports
 from trytond.modules.account.tests.tools import create_fiscalyear, create_chart, get_accounts, create_tax
 from trytond.modules.company.tests.tools import create_company, get_company
 from trytond.tests.tools import activate_modules
@@ -24,7 +19,6 @@ class Test(unittest.TestCase):
 
     def test(self):
 
-        today = datetime.date.today()
         now = datetime.datetime.now()
 
         # Install account_bank_statement
@@ -48,8 +42,6 @@ class Test(unittest.TestCase):
         _ = create_chart(company)
         accounts = get_accounts(company)
         receivable = accounts['receivable']
-        revenue = accounts['revenue']
-        expense = accounts['expense']
         cash = accounts['cash']
         cash.bank_reconcile = True
         cash.save()
@@ -97,9 +89,7 @@ class Test(unittest.TestCase):
         line2.debit = Decimal('80.0')
         line2.party = party
         move.click('post')
-        self.assertEqual(move.state
-        , 'posted'
-        )
+        self.assertEqual(move.state, 'posted')
 
         # Create Bank Statement With Different Curreny
         BankStatement = Model.get('account.bank.statement')
@@ -113,13 +103,9 @@ class Test(unittest.TestCase):
         statement_line.description = 'Statement Line'
         statement_line.amount = Decimal('80.0')
         statement.click('confirm')
-        self.assertEqual(statement.state
-        , 'confirmed'
-        )
+        self.assertEqual(statement.state, 'confirmed')
         statement_line = StatementLine(1)
-        self.assertEqual(statement_line.state
-        , 'confirmed'
-        )
+        self.assertEqual(statement_line.state, 'confirmed')
         self.assertNotEqual(statement_line.date_utc, statement_line.date)
         timezone = pytz.timezone('Europe/Madrid')
         date = timezone.localize(statement_line.date_utc)
@@ -128,6 +114,4 @@ class Test(unittest.TestCase):
 
         # Cancel line
         statement_line.click('cancel')
-        self.assertEqual(statement_line.state
-        , 'cancelled'
-        )
+        self.assertEqual(statement_line.state, 'cancelled')
