@@ -352,7 +352,7 @@ msgstr ""
 
 msgctxt "model:ir.model.button,string:statement_cancel_button"
 msgid "Cancel"
-msgstr "Cancel·la"
+msgstr "Cancelar"
 
 msgctxt "model:ir.model.button,string:statement_confirm_button"
 msgid "Confirm"
