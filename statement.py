@@ -144,9 +144,9 @@ class Statement(Workflow, ModelSQL, ModelView):
         if self.journal:
             return self.journal.currency.id
         else:
-            company = Transaction().context.get('company')
-            if company:
-                return Company(company).currency.id
+            company_id = Transaction().context.get('company')
+            if company_id is not None and company_id >= 0:
+                return Company(company_id).currency.id
 
     @staticmethod
     def default_end_balance():
