@@ -1,6 +1,6 @@
 # The COPYRIGHT file at the top level of this repository contains the full
 # copyright notices and license terms.
-from datetime import datetime
+from datetime import datetime, date as datetime_date
 import pytz
 import csv
 from io import StringIO
@@ -357,13 +357,15 @@ class StatementLine(sequence_ordered(), Workflow, ModelSQL, ModelView):
                     and line.statement.company.timezone):
                 timezone = line.statement.company.timezone
                 break
+        if isinstance(value, datetime_date):
+            value = datetime.combine(value, datetime.min.time())
         if timezone and isinstance(value, datetime):
             timezone = pytz.timezone(timezone)
             date = timezone.localize(value)
             value -= date.utcoffset()
 
         cls.write(lines, {
-            name + '_utc': value,
+            name + '_utc': value, # DateTime field
             })
 
     def _search_reconciliation(self):
