@@ -195,7 +195,7 @@ class Statement(Workflow, ModelSQL, ModelView):
     def delete(cls, statements):
         for statement in statements:
             if statement.lines:
-                raise UserError(gettext('account_bank_statement.cannot_delete',
+                raise UserError(gettext('account_bank_statement.cannot_delete_statement',
                     statement=statement.rec_name))
         super(Statement, cls).delete(statements)
 
