@@ -16,6 +16,7 @@ from trytond.transaction import Transaction
 from trytond import backend
 from trytond.i18n import gettext
 from trytond.exceptions import UserError
+from trytond.model.exceptions import ValidationError
 from trytond.modules.currency.fields import Monetary
 
 __all__ = ['Statement', 'StatementLine', 'ImportStart', 'Import']
@@ -463,7 +464,7 @@ class StatementLine(sequence_ordered(), Workflow, ModelSQL, ModelView):
 
     def check_amounts(self):
         if self.state == 'posted' and self.company_amount != self.moves_amount:
-            raise UserError(gettext(
+            raise ValidationError(gettext(
                 'account_bank_statement.different_amounts',
                     moves_amount=self.moves_amount,
                     amount=self.company_amount,
