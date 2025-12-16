@@ -104,7 +104,7 @@ class Test(unittest.TestCase):
         statement_line.amount = Decimal('80.0')
         statement.click('confirm')
         self.assertEqual(statement.state, 'confirmed')
-        statement_line = StatementLine(1)
+        statement_line, = statement.lines
         self.assertEqual(statement_line.state, 'confirmed')
         self.assertNotEqual(statement_line.date_utc, statement_line.date)
         timezone = pytz.timezone('Europe/Madrid')
