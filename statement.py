@@ -13,7 +13,6 @@ from trytond.pool import Pool
 from trytond.rpc import RPC
 from trytond.pyson import Eval, Not, Equal, If
 from trytond.transaction import Transaction
-from trytond import backend
 from trytond.i18n import gettext
 from trytond.exceptions import UserError
 from trytond.modules.currency.fields import Monetary
@@ -306,7 +305,7 @@ class StatementLine(sequence_ordered(), Workflow, ModelSQL, ModelView):
     @classmethod
     def __register__(cls, module_name):
         cursor = Transaction().connection.cursor()
-        table = backend.TableHandler(cls, module_name)
+        table = cls.__table_handler__(module_name)
         sql_table = cls.__table__()
 
         # Migration: rename date into date_utc
