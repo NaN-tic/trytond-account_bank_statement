@@ -227,26 +227,6 @@ msgid "Draft"
 msgstr "Borrador"
 
 msgctxt ""
-"model:ir.action.act_window.domain,name:act_account_bank_statement_line_domain_all"
-msgid "All"
-msgstr "Todo"
-
-msgctxt ""
-"model:ir.action.act_window.domain,name:act_account_bank_statement_line_domain_cancelled"
-msgid "Cancelled"
-msgstr "Cancelado"
-
-msgctxt ""
-"model:ir.action.act_window.domain,name:act_account_bank_statement_line_domain_confirmed"
-msgid "Confirmed"
-msgstr "Confirmado"
-
-msgctxt ""
-"model:ir.action.act_window.domain,name:act_account_bank_statement_line_domain_draft"
-msgid "Draft"
-msgstr "Borrador"
-
-msgctxt ""
 "model:ir.action.act_window.domain,name:act_account_bank_statement_line_domain_posted"
 msgid "Posted"
 msgstr "Contabilizado"
