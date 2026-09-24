@@ -5,16 +5,8 @@
         <record model="res.group" id="group_account_bank_statement_admin">
             <field name="name">Account Bank Statement Administration</field>
         </record>
-        <record model="res.user-res.group" id="user_admin_group_account_bank_statement_admin">
-            <field name="user" ref="res.user_admin"/>
-            <field name="group" ref="group_account_bank_statement_admin"/>
-        </record>
         <record model="res.group" id="group_account_bank_statement">
             <field name="name">Account Bank Statement</field>
-        </record>
-        <record model="res.user-res.group" id="user_admin_group_account_bank_statement">
-            <field name="user" ref="res.user_admin"/>
-            <field name="group" ref="group_account_bank_statement"/>
         </record>
         <!-- buttons -->
         <record model="ir.model.button" id="statement_search_reconcile_button">
