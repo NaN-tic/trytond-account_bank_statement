@@ -1,0 +1,521 @@
+#
+msgid ""
+msgstr ""
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgctxt "field:account.account,bank_reconcile:"
+msgid "Bank Conciliation"
+msgstr "银行对账"
+
+msgctxt "field:account.account.template,bank_reconcile:"
+msgid "Bank Conciliation"
+msgstr "银行对账"
+
+msgctxt "field:account.bank.statement,company:"
+msgid "Company"
+msgstr "公司"
+
+msgctxt "field:account.bank.statement,currency:"
+msgid "Currency"
+msgstr "货币"
+
+msgctxt "field:account.bank.statement,date:"
+msgid "Date"
+msgstr "日期"
+
+msgctxt "field:account.bank.statement,end_balance:"
+msgid "End Balance"
+msgstr "期末余额"
+
+msgctxt "field:account.bank.statement,end_date:"
+msgid "End Date"
+msgstr "结账日期"
+
+msgctxt "field:account.bank.statement,journal:"
+msgid "Journal"
+msgstr "日记账"
+
+msgctxt "field:account.bank.statement,lines:"
+msgid "Lines"
+msgstr "明细"
+
+msgctxt "field:account.bank.statement,start_balance:"
+msgid "Start Balance"
+msgstr "起始余额"
+
+msgctxt "field:account.bank.statement,start_date:"
+msgid "Start Date"
+msgstr "启用日期"
+
+msgctxt "field:account.bank.statement,state:"
+msgid "State"
+msgstr "状态"
+
+msgctxt "field:account.bank.statement.import.start,attachment:"
+msgid "Attach file after import"
+msgstr "导入后附加文件"
+
+msgctxt "field:account.bank.statement.import.start,confirm:"
+msgid "Confirm"
+msgstr "确认"
+
+msgctxt "field:account.bank.statement.import.start,import_file:"
+msgid "File"
+msgstr "文件"
+
+msgctxt "field:account.bank.statement.import.start,type:"
+msgid "Type"
+msgstr "科目"
+
+msgctxt "field:account.bank.statement.journal,account:"
+msgid "Account"
+msgstr "账户"
+
+msgctxt "field:account.bank.statement.journal,company:"
+msgid "Company"
+msgstr "公司"
+
+msgctxt "field:account.bank.statement.journal,currency:"
+msgid "Currency"
+msgstr "货币"
+
+msgctxt "field:account.bank.statement.journal,journal:"
+msgid "Journal"
+msgstr "日记账"
+
+msgctxt "field:account.bank.statement.journal,name:"
+msgid "Name"
+msgstr "名称"
+
+msgctxt "field:account.bank.statement.line,account:"
+msgid "Account"
+msgstr "账户"
+
+msgctxt "field:account.bank.statement.line,amount:"
+msgid "Amount"
+msgstr "数额"
+
+msgctxt "field:account.bank.statement.line,company:"
+msgid "Company"
+msgstr "公司"
+
+msgctxt "field:account.bank.statement.line,company_amount:"
+msgid "Company Amount"
+msgstr "公司币种金额"
+
+msgctxt "field:account.bank.statement.line,company_currency:"
+msgid "Company Currency"
+msgstr "公司币种"
+
+msgctxt "field:account.bank.statement.line,company_moves_amount:"
+msgid "Moves Amount"
+msgstr "凭证金额"
+
+msgctxt "field:account.bank.statement.line,date:"
+msgid "Date"
+msgstr "日期"
+
+msgctxt "field:account.bank.statement.line,date_utc:"
+msgid "Date UTC"
+msgstr "UTC 日期"
+
+msgctxt "field:account.bank.statement.line,description:"
+msgid "Description"
+msgstr "描述"
+
+msgctxt "field:account.bank.statement.line,journal:"
+msgid "Journal"
+msgstr "日记账"
+
+msgctxt "field:account.bank.statement.line,moves_amount:"
+msgid "Moves Amount"
+msgstr "凭证金额"
+
+msgctxt "field:account.bank.statement.line,notes:"
+msgid "Notes"
+msgstr "注释"
+
+msgctxt "field:account.bank.statement.line,reconciled:"
+msgid "Reconciled"
+msgstr "已对账"
+
+msgctxt "field:account.bank.statement.line,state:"
+msgid "State"
+msgstr "状态"
+
+msgctxt "field:account.bank.statement.line,statement:"
+msgid "Statement"
+msgstr "利润表"
+
+msgctxt "field:account.bank.statement.line,statement_currency:"
+msgid "Statement Currency"
+msgstr "对账单币种"
+
+msgctxt "help:account.bank.statement,date:"
+msgid "Created date bank statement"
+msgstr "银行对账单创建日期"
+
+msgctxt "help:account.bank.statement,end_date:"
+msgid "End date bank statement"
+msgstr "银行对账单结束日期"
+
+msgctxt "help:account.bank.statement,start_date:"
+msgid "Start date bank statement"
+msgstr "银行对账单开始日期"
+
+msgctxt "help:account.bank.statement.import.start,confirm:"
+msgid "Confirm Bank Statement after import."
+msgstr "导入后确认银行对账单。"
+
+msgctxt "model:account.bank.statement,name:"
+msgid "Bank Statement"
+msgstr "银行对账单"
+
+msgctxt "model:account.bank.statement.import.start,name:"
+msgid "Import Start"
+msgstr "导入：开始"
+
+msgctxt "model:account.bank.statement.journal,name:"
+msgid "Bank Statement Journal"
+msgstr "银行对账单日记账"
+
+msgctxt "model:account.bank.statement.line,name:"
+msgid "Bank Statement Line"
+msgstr "银行对账单明细"
+
+msgctxt "model:ir.action,name:act_account_bank_statement"
+msgid "Bank Statement"
+msgstr "银行对账单"
+
+msgctxt "model:ir.action,name:act_account_bank_statement_line"
+msgid "Bank Statement Line"
+msgstr "银行对账单明细"
+
+msgctxt "model:ir.action,name:act_bank_statement_journal_form"
+msgid "Bank Statement Journals"
+msgstr "银行对账单日记账"
+
+msgctxt "model:ir.action,name:act_bank_statement_lines"
+msgid "Statement Lines"
+msgstr "对账单明细"
+
+msgctxt "model:ir.action,name:wizard_import"
+msgid "Import File"
+msgstr "导入文件"
+
+msgctxt "model:ir.action.act_window.domain,name:"
+msgid "All"
+msgstr "全部"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_account_bank_statement_domain_all"
+msgid "All"
+msgstr "全部"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_account_bank_statement_domain_cancelled"
+msgid "Cancelled"
+msgstr "已取消"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_account_bank_statement_domain_confirmed"
+msgid "Confirmed"
+msgstr "已确认"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_account_bank_statement_domain_draft"
+msgid "Draft"
+msgstr "草案"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_account_bank_statement_line_domain_posted"
+msgid "Posted"
+msgstr "已入账"
+
+#, python-format
+msgctxt "model:ir.message,text:account_bank_statement_already_has_lines"
+msgid "Statement \"%(statement)s\" already has lines."
+msgstr "对账单“%(statement)s”已有明细。"
+
+#, python-format
+msgctxt "model:ir.message,text:cannot_cancel_statement_line"
+msgid "Line \"%(line)s\" cannot be cancelled."
+msgstr "无法取消明细“%(line)s”。"
+
+#, python-format
+msgctxt "model:ir.message,text:cannot_delete_statement"
+msgid "Statement \"%(statement)s\" cannot be deleted because it contains lines."
+msgstr "无法删除对账单“%(statement)s”，因为其包含明细。"
+
+#, python-format
+msgctxt "model:ir.message,text:cannot_delete_statement_line"
+msgid ""
+"Line \"%(line)s\" cannot be deleted because it is not in Draft or Cancelled "
+"state."
+msgstr "无法删除明细“%(line)s”，因为其状态不是草稿或已取消。"
+
+#, python-format
+msgctxt "model:ir.message,text:currency_modify"
+msgid ""
+"You cannot modify the currency to journal that already has a statement on "
+"date %(date)s"
+msgstr "无法修改该日记账的币种，因为其在 %(date)s 已有对账单。"
+
+#, python-format
+msgctxt "model:ir.message,text:different_amounts"
+msgid ""
+"Moves Amount \"%(moves_amount)s\" does not match Amount \"%(amount)s\" in "
+"line \"%(line)s\"."
+msgstr "明细“%(line)s”的凭证金额“%(moves_amount)s”与金额“%(amount)s”不一致。"
+
+#, python-format
+msgctxt "model:ir.message,text:format_error"
+msgid ""
+"The supplied file does not have the expected format.\n"
+"This is the technical error returned by parser:\n"
+"%(error)s."
+msgstr ""
+"所提供文件的格式不符合预期。\n"
+"解析器返回的技术错误：\n"
+"%(error)s。"
+
+#, python-format
+msgctxt "model:ir.message,text:invalid_account_payment_type"
+msgid ""
+"Can not set Payment Type in move line \"%(payment)s\" because account is not"
+" Payable nor Receivable."
+msgstr "无法设置分录“%(payment)s”的付款方式，因为该科目既不是应付科目，也不是应收科目。"
+
+#, python-format
+msgctxt "model:ir.message,text:invalid_date"
+msgid "Invalid string for date: %(date)s"
+msgstr "无效的日期字符串：%(date)s"
+
+#, python-format
+msgctxt "model:ir.message,text:invalid_number"
+msgid "Invalid string for number: %(number)s"
+msgstr "无效的数字字符串：%(number)s"
+
+#, python-format
+msgctxt "model:ir.message,text:line_reconciled"
+msgid ""
+"Line \"%(line)s\" already reconciled with bank statement line "
+"\"%(statment_line)s\" with amount \"%(amount)s\". Please remove bank "
+"conciliation and try again."
+msgstr ""
+"分录“%(line)s”已与银行对账单明细“%(statment_line)s”核销，金额为“%(amount)s”。请取消银行对账后重试。"
+
+#, python-format
+msgctxt "model:ir.message,text:missing_columns"
+msgid "Missing columns in line: %(columns)s"
+msgstr "明细缺少列：%(columns)s"
+
+#, python-format
+msgctxt "model:ir.message,text:modifiy_with_related_model"
+msgid ""
+"It is not possible to modify the field \"%(field)s\" as the payment type "
+"\"%(type)s\" is used on %(model)s \"%(name)s\""
+msgstr "无法修改字段“%(field)s”，因为付款方式“%(type)s”已用于%(model)s“%(name)s”。"
+
+msgctxt "model:ir.message,text:statement_already_has_lines"
+msgid ""
+"You cannot import a bank statement file in a bank  statement with lines."
+msgstr "无法将银行对账单文件导入已有明细的银行对账单。"
+
+msgctxt "model:ir.message,text:unicode_error"
+msgid ""
+"The supplied file has Unicode Error and can not load. Check that the file is"
+" utf-8."
+msgstr "所提供文件存在 Unicode 错误，无法加载。请检查文件是否使用 UTF-8 编码。"
+
+msgctxt "model:ir.model.button,string:statement_cancel_button"
+msgid "Cancel"
+msgstr "取消"
+
+msgctxt "model:ir.model.button,string:statement_confirm_button"
+msgid "Confirm"
+msgstr "确认"
+
+msgctxt "model:ir.model.button,string:statement_draft_button"
+msgid "Draft"
+msgstr "草稿"
+
+msgctxt "model:ir.model.button,string:statement_line_cancel_button"
+msgid "Cancel"
+msgstr "取消"
+
+msgctxt "model:ir.model.button,string:statement_line_confirm_button"
+msgid "Confirm"
+msgstr "确认"
+
+msgctxt "model:ir.model.button,string:statement_line_draft_button"
+msgid "Draft"
+msgstr "草案"
+
+msgctxt "model:ir.model.button,string:statement_line_post_button"
+msgid "Post"
+msgstr "登记入账"
+
+msgctxt "model:ir.model.button,string:statement_search_reconcile_button"
+msgid "Search"
+msgstr "搜索"
+
+msgctxt "model:ir.rule.group,name:rule_group_bank_statement"
+msgid "Bank Statement"
+msgstr "银行对账单"
+
+msgctxt "model:ir.rule.group,name:rule_group_bank_statement_journal"
+msgid "Bank statement Journal"
+msgstr "银行对账单日记账"
+
+msgctxt "model:ir.rule.group,name:rule_group_bank_statement_line"
+msgid "Bank Statement Line"
+msgstr "银行对账单明细"
+
+msgctxt "model:ir.ui.menu,name:menu_account_bank_statement"
+msgid "Bank Statements"
+msgstr "银行对账单"
+
+msgctxt "model:ir.ui.menu,name:menu_account_bank_statement_line"
+msgid "Bank Statement Lines"
+msgstr "银行对账单明细"
+
+msgctxt "model:ir.ui.menu,name:menu_bank_statement_configuration"
+msgid "Bank Statements"
+msgstr "银行对账单"
+
+msgctxt "model:ir.ui.menu,name:menu_bank_statement_journal_form"
+msgid "Bank Statement Journals"
+msgstr "银行对账单日记账"
+
+msgctxt "model:ir.ui.menu,name:menu_bank_statements"
+msgid "Bank Statements"
+msgstr "银行对账单"
+
+msgctxt "model:res.group,name:group_account_bank_statement"
+msgid "Account Bank Statement"
+msgstr "银行对账单"
+
+msgctxt "model:res.group,name:group_account_bank_statement_admin"
+msgid "Account Bank Statement Administration"
+msgstr "银行对账单管理"
+
+msgctxt "selection:account.bank.statement,state:"
+msgid "Cancelled"
+msgstr "已取消"
+
+msgctxt "selection:account.bank.statement,state:"
+msgid "Confirmed"
+msgstr "已确认"
+
+msgctxt "selection:account.bank.statement,state:"
+msgid "Draft"
+msgstr "草案"
+
+msgctxt "selection:account.bank.statement.import.start,type:"
+msgid "CSV (date, description, amount)"
+msgstr "CSV（日期、描述、金额）"
+
+msgctxt "selection:account.bank.statement.line,state:"
+msgid "Cancelled"
+msgstr "已取消"
+
+msgctxt "selection:account.bank.statement.line,state:"
+msgid "Confirmed"
+msgstr "已确认"
+
+msgctxt "selection:account.bank.statement.line,state:"
+msgid "Draft"
+msgstr "草案"
+
+msgctxt "selection:account.bank.statement.line,state:"
+msgid "Posted"
+msgstr "已入账"
+
+msgctxt "view:account.bank.statement.journal:"
+msgid "Statement Journal"
+msgstr "对账单日记账"
+
+msgctxt "view:account.bank.statement.journal:"
+msgid "Statement Journals"
+msgstr "对账单日记账"
+
+msgctxt "view:account.bank.statement.line:"
+msgid "Date"
+msgstr "日期"
+
+msgctxt "view:account.bank.statement:"
+msgid "Time"
+msgstr "时间"
+
+msgctxt "view:account.move.line:"
+msgid "Bank Amount"
+msgstr "银行金额"
+
+msgctxt "view:account.move.line:"
+msgid "Credit"
+msgstr "贷方"
+
+msgctxt "view:account.move.line:"
+msgid "Debit"
+msgstr "借方"
+
+msgctxt "view:account.move.line:"
+msgid "Other Info"
+msgstr "其他信息"
+
+msgctxt "view:account.move.line:"
+msgid "Unreconciled Bank Amount"
+msgstr "未核销银行金额"
+
+msgctxt "wizard_button:account.bank.statement.import,start,end:"
+msgid "Cancel"
+msgstr "取消"
+
+msgctxt "wizard_button:account.bank.statement.import,start,import_file:"
+msgid "Import File"
+msgstr "导入文件"
+
+msgctxt "field:account.bank.reconciliation,amount:"
+msgid "Amount"
+msgstr "数额"
+
+msgctxt "field:account.bank.reconciliation,bank_statement_line:"
+msgid "Bank Statement Line"
+msgstr "银行对账单明细"
+
+msgctxt "field:account.move.open_bank_reconcile_lines.start,account:"
+msgid "Account"
+msgstr "账户"
+
+msgctxt "model:account.bank.statement,string:"
+msgid "Account Bank Statement"
+msgstr "银行对账单"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_account_bank_statement_line_domain_draft"
+msgid "Draft"
+msgstr "草案"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_account_bank_statement_line_domain_confirmed"
+msgid "Confirmed"
+msgstr "已确认"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_account_bank_statement_line_domain_all"
+msgid "All"
+msgstr "全部"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_account_bank_statement_line_domain_cancelled"
+msgid "Cancelled"
+msgstr "已取消"
+
+msgctxt "wizard_button:account.move.open_bank_reconcile_lines,start,end:"
+msgid "Cancel"
+msgstr "取消"
