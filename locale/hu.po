@@ -1,0 +1,536 @@
+#
+msgid ""
+msgstr ""
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "field:account.account,bank_reconcile:"
+msgid "Bank Conciliation"
+msgstr "Banki egyeztetés"
+
+msgctxt "field:account.account.template,bank_reconcile:"
+msgid "Bank Conciliation"
+msgstr "Banki egyeztetés"
+
+msgctxt "field:account.bank.statement,company:"
+msgid "Company"
+msgstr "Cég"
+
+msgctxt "field:account.bank.statement,currency:"
+msgid "Currency"
+msgstr "Pénznem"
+
+msgctxt "field:account.bank.statement,date:"
+msgid "Date"
+msgstr "Dátum"
+
+msgctxt "field:account.bank.statement,end_balance:"
+msgid "End Balance"
+msgstr "Záró egyenleg"
+
+msgctxt "field:account.bank.statement,end_date:"
+msgid "End Date"
+msgstr "Befejező dátum"
+
+msgctxt "field:account.bank.statement,journal:"
+msgid "Journal"
+msgstr "Napló"
+
+msgctxt "field:account.bank.statement,lines:"
+msgid "Lines"
+msgstr "Sorok"
+
+msgctxt "field:account.bank.statement,start_balance:"
+msgid "Start Balance"
+msgstr "Nyitó egyenleg"
+
+msgctxt "field:account.bank.statement,start_date:"
+msgid "Start Date"
+msgstr "Kezdődátum"
+
+msgctxt "field:account.bank.statement,state:"
+msgid "State"
+msgstr "Állapot"
+
+msgctxt "field:account.bank.statement.import.start,attachment:"
+msgid "Attach file after import"
+msgstr "Fájl csatolása importálás után"
+
+msgctxt "field:account.bank.statement.import.start,confirm:"
+msgid "Confirm"
+msgstr "Jóváhagyás"
+
+msgctxt "field:account.bank.statement.import.start,import_file:"
+msgid "File"
+msgstr "Fájl"
+
+msgctxt "field:account.bank.statement.import.start,type:"
+msgid "Type"
+msgstr "Típus"
+
+msgctxt "field:account.bank.statement.journal,account:"
+msgid "Account"
+msgstr "Számla"
+
+msgctxt "field:account.bank.statement.journal,company:"
+msgid "Company"
+msgstr "Cég"
+
+msgctxt "field:account.bank.statement.journal,currency:"
+msgid "Currency"
+msgstr "Pénznem"
+
+msgctxt "field:account.bank.statement.journal,journal:"
+msgid "Journal"
+msgstr "Napló"
+
+msgctxt "field:account.bank.statement.journal,name:"
+msgid "Name"
+msgstr "Név"
+
+msgctxt "field:account.bank.statement.line,account:"
+msgid "Account"
+msgstr "Számla"
+
+msgctxt "field:account.bank.statement.line,amount:"
+msgid "Amount"
+msgstr "Összeg"
+
+msgctxt "field:account.bank.statement.line,company:"
+msgid "Company"
+msgstr "Cég"
+
+msgctxt "field:account.bank.statement.line,company_amount:"
+msgid "Company Amount"
+msgstr "Összeg a vállalat pénznemében"
+
+msgctxt "field:account.bank.statement.line,company_currency:"
+msgid "Company Currency"
+msgstr "Vállalat pénzneme"
+
+msgctxt "field:account.bank.statement.line,company_moves_amount:"
+msgid "Moves Amount"
+msgstr "Könyvelési tételek összege"
+
+msgctxt "field:account.bank.statement.line,date:"
+msgid "Date"
+msgstr "Dátum"
+
+msgctxt "field:account.bank.statement.line,date_utc:"
+msgid "Date UTC"
+msgstr "UTC-dátum"
+
+msgctxt "field:account.bank.statement.line,description:"
+msgid "Description"
+msgstr "Leírás"
+
+msgctxt "field:account.bank.statement.line,journal:"
+msgid "Journal"
+msgstr "Napló"
+
+msgctxt "field:account.bank.statement.line,moves_amount:"
+msgid "Moves Amount"
+msgstr "Könyvelési tételek összege"
+
+msgctxt "field:account.bank.statement.line,notes:"
+msgid "Notes"
+msgstr "Jegyzetek"
+
+msgctxt "field:account.bank.statement.line,reconciled:"
+msgid "Reconciled"
+msgstr "Kiegyenlített"
+
+msgctxt "field:account.bank.statement.line,state:"
+msgid "State"
+msgstr "Állapot"
+
+msgctxt "field:account.bank.statement.line,statement:"
+msgid "Statement"
+msgstr "Bankszámlakivonat"
+
+msgctxt "field:account.bank.statement.line,statement_currency:"
+msgid "Statement Currency"
+msgstr "Kivonat pénzneme"
+
+msgctxt "help:account.bank.statement,date:"
+msgid "Created date bank statement"
+msgstr "Bankkivonat létrehozási dátuma"
+
+msgctxt "help:account.bank.statement,end_date:"
+msgid "End date bank statement"
+msgstr "Bankkivonat záró dátuma"
+
+msgctxt "help:account.bank.statement,start_date:"
+msgid "Start date bank statement"
+msgstr "Bankkivonat kezdő dátuma"
+
+msgctxt "help:account.bank.statement.import.start,confirm:"
+msgid "Confirm Bank Statement after import."
+msgstr "Bankkivonat megerősítése importálás után."
+
+msgctxt "model:account.bank.statement,name:"
+msgid "Bank Statement"
+msgstr "Bankkivonat"
+
+msgctxt "model:account.bank.statement.import.start,name:"
+msgid "Import Start"
+msgstr "Importálás: indítás"
+
+msgctxt "model:account.bank.statement.journal,name:"
+msgid "Bank Statement Journal"
+msgstr "Bankkivonat naplója"
+
+msgctxt "model:account.bank.statement.line,name:"
+msgid "Bank Statement Line"
+msgstr "Bankkivonat sora"
+
+msgctxt "model:ir.action,name:act_account_bank_statement"
+msgid "Bank Statement"
+msgstr "Bankkivonat"
+
+msgctxt "model:ir.action,name:act_account_bank_statement_line"
+msgid "Bank Statement Line"
+msgstr "Bankkivonat sora"
+
+msgctxt "model:ir.action,name:act_bank_statement_journal_form"
+msgid "Bank Statement Journals"
+msgstr "Bankkivonat-naplók"
+
+msgctxt "model:ir.action,name:act_bank_statement_lines"
+msgid "Statement Lines"
+msgstr "Számlakivonat sorok"
+
+msgctxt "model:ir.action,name:wizard_import"
+msgid "Import File"
+msgstr "Fájl importálása"
+
+msgctxt "model:ir.action.act_window.domain,name:"
+msgid "All"
+msgstr "összes"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_account_bank_statement_domain_all"
+msgid "All"
+msgstr "összes"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_account_bank_statement_domain_cancelled"
+msgid "Cancelled"
+msgstr "érvénytelen"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_account_bank_statement_domain_confirmed"
+msgid "Confirmed"
+msgstr "jóváhagyott"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_account_bank_statement_domain_draft"
+msgid "Draft"
+msgstr "vázlat"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_account_bank_statement_line_domain_posted"
+msgid "Posted"
+msgstr "lekönyvelt"
+
+#, python-format
+msgctxt "model:ir.message,text:account_bank_statement_already_has_lines"
+msgid "Statement \"%(statement)s\" already has lines."
+msgstr "A(z) „%(statement)s” kivonatnak már vannak sorai."
+
+#, python-format
+msgctxt "model:ir.message,text:cannot_cancel_statement_line"
+msgid "Line \"%(line)s\" cannot be cancelled."
+msgstr "A(z) „%(line)s” sor nem vonható vissza."
+
+#, python-format
+msgctxt "model:ir.message,text:cannot_delete_statement"
+msgid "Statement \"%(statement)s\" cannot be deleted because it contains lines."
+msgstr "A(z) „%(statement)s” kivonat nem törölhető, mert sorokat tartalmaz."
+
+#, python-format
+msgctxt "model:ir.message,text:cannot_delete_statement_line"
+msgid ""
+"Line \"%(line)s\" cannot be deleted because it is not in Draft or Cancelled "
+"state."
+msgstr ""
+"A(z) „%(line)s” sor nem törölhető, mert nem piszkozat vagy visszavont "
+"állapotú."
+
+#, python-format
+msgctxt "model:ir.message,text:currency_modify"
+msgid ""
+"You cannot modify the currency to journal that already has a statement on "
+"date %(date)s"
+msgstr ""
+"A napló pénzneme nem módosítható, mert %(date)s dátummal már van kivonata."
+
+#, python-format
+msgctxt "model:ir.message,text:different_amounts"
+msgid ""
+"Moves Amount \"%(moves_amount)s\" does not match Amount \"%(amount)s\" in "
+"line \"%(line)s\"."
+msgstr ""
+"A(z) „%(line)s” sor könyvelési tételeinek „%(moves_amount)s” összege nem "
+"egyezik a(z) „%(amount)s” összeggel."
+
+#, python-format
+msgctxt "model:ir.message,text:format_error"
+msgid ""
+"The supplied file does not have the expected format.\n"
+"This is the technical error returned by parser:\n"
+"%(error)s."
+msgstr ""
+"A megadott fájl formátuma nem megfelelő.\n"
+"A feldolgozó által visszaadott technikai hiba:\n"
+"%(error)s."
+
+#, python-format
+msgctxt "model:ir.message,text:invalid_account_payment_type"
+msgid ""
+"Can not set Payment Type in move line \"%(payment)s\" because account is not"
+" Payable nor Receivable."
+msgstr ""
+"A(z) „%(payment)s” könyvelési sor fizetési módja nem állítható be, mert a "
+"számla nem kötelezettség vagy követelés típusú."
+
+#, python-format
+msgctxt "model:ir.message,text:invalid_date"
+msgid "Invalid string for date: %(date)s"
+msgstr "Érvénytelen dátumszöveg: %(date)s"
+
+#, python-format
+msgctxt "model:ir.message,text:invalid_number"
+msgid "Invalid string for number: %(number)s"
+msgstr "Érvénytelen számszöveg: %(number)s"
+
+#, python-format
+msgctxt "model:ir.message,text:line_reconciled"
+msgid ""
+"Line \"%(line)s\" already reconciled with bank statement line "
+"\"%(statment_line)s\" with amount \"%(amount)s\". Please remove bank "
+"conciliation and try again."
+msgstr ""
+"A(z) „%(line)s” sor már egyeztetve van a(z) „%(statment_line)s” "
+"bankkivonatsorral, „%(amount)s” összeggel. Vonja vissza a banki egyeztetést,"
+" majd próbálja újra."
+
+#, python-format
+msgctxt "model:ir.message,text:missing_columns"
+msgid "Missing columns in line: %(columns)s"
+msgstr "Hiányzó oszlopok a sorban: %(columns)s"
+
+#, python-format
+msgctxt "model:ir.message,text:modifiy_with_related_model"
+msgid ""
+"It is not possible to modify the field \"%(field)s\" as the payment type "
+"\"%(type)s\" is used on %(model)s \"%(name)s\""
+msgstr ""
+"A(z) „%(field)s” mező nem módosítható, mert a(z) „%(type)s” fizetési módot "
+"a(z) %(model)s „%(name)s” rekord használja."
+
+msgctxt "model:ir.message,text:statement_already_has_lines"
+msgid ""
+"You cannot import a bank statement file in a bank  statement with lines."
+msgstr ""
+"Nem importálható bankkivonatfájl olyan bankkivonatba, amelynek már vannak "
+"sorai."
+
+msgctxt "model:ir.message,text:unicode_error"
+msgid ""
+"The supplied file has Unicode Error and can not load. Check that the file is"
+" utf-8."
+msgstr ""
+"A megadott fájl Unicode-hiba miatt nem tölthető be. Ellenőrizze, hogy a fájl"
+" UTF-8 kódolású-e."
+
+msgctxt "model:ir.model.button,string:statement_cancel_button"
+msgid "Cancel"
+msgstr "Érvénytelenítés"
+
+msgctxt "model:ir.model.button,string:statement_confirm_button"
+msgid "Confirm"
+msgstr "Jóváhagyás"
+
+msgctxt "model:ir.model.button,string:statement_draft_button"
+msgid "Draft"
+msgstr "vázlat"
+
+msgctxt "model:ir.model.button,string:statement_line_cancel_button"
+msgid "Cancel"
+msgstr "Mégse"
+
+msgctxt "model:ir.model.button,string:statement_line_confirm_button"
+msgid "Confirm"
+msgstr "Jóváhagyás"
+
+msgctxt "model:ir.model.button,string:statement_line_draft_button"
+msgid "Draft"
+msgstr "vázlat"
+
+msgctxt "model:ir.model.button,string:statement_line_post_button"
+msgid "Post"
+msgstr "Rögzítés"
+
+msgctxt "model:ir.model.button,string:statement_search_reconcile_button"
+msgid "Search"
+msgstr "Keresés"
+
+msgctxt "model:ir.rule.group,name:rule_group_bank_statement"
+msgid "Bank Statement"
+msgstr "Bankkivonat"
+
+msgctxt "model:ir.rule.group,name:rule_group_bank_statement_journal"
+msgid "Bank statement Journal"
+msgstr "Bankkivonat naplója"
+
+msgctxt "model:ir.rule.group,name:rule_group_bank_statement_line"
+msgid "Bank Statement Line"
+msgstr "Bankkivonat sora"
+
+msgctxt "model:ir.ui.menu,name:menu_account_bank_statement"
+msgid "Bank Statements"
+msgstr "Bankkivonatok"
+
+msgctxt "model:ir.ui.menu,name:menu_account_bank_statement_line"
+msgid "Bank Statement Lines"
+msgstr "Bankkivonatsorok"
+
+msgctxt "model:ir.ui.menu,name:menu_bank_statement_configuration"
+msgid "Bank Statements"
+msgstr "Bankkivonatok"
+
+msgctxt "model:ir.ui.menu,name:menu_bank_statement_journal_form"
+msgid "Bank Statement Journals"
+msgstr "Bankkivonat-naplók"
+
+msgctxt "model:ir.ui.menu,name:menu_bank_statements"
+msgid "Bank Statements"
+msgstr "Bankkivonatok"
+
+msgctxt "model:res.group,name:group_account_bank_statement"
+msgid "Account Bank Statement"
+msgstr "Bankkivonat"
+
+msgctxt "model:res.group,name:group_account_bank_statement_admin"
+msgid "Account Bank Statement Administration"
+msgstr "Bankkivonatok adminisztrációja"
+
+msgctxt "selection:account.bank.statement,state:"
+msgid "Cancelled"
+msgstr "érvénytelen"
+
+msgctxt "selection:account.bank.statement,state:"
+msgid "Confirmed"
+msgstr "jóváhagyott"
+
+msgctxt "selection:account.bank.statement,state:"
+msgid "Draft"
+msgstr "vázlat"
+
+msgctxt "selection:account.bank.statement.import.start,type:"
+msgid "CSV (date, description, amount)"
+msgstr "CSV (dátum, leírás, összeg)"
+
+msgctxt "selection:account.bank.statement.line,state:"
+msgid "Cancelled"
+msgstr "érvénytelen"
+
+msgctxt "selection:account.bank.statement.line,state:"
+msgid "Confirmed"
+msgstr "jóváhagyott"
+
+msgctxt "selection:account.bank.statement.line,state:"
+msgid "Draft"
+msgstr "vázlat"
+
+msgctxt "selection:account.bank.statement.line,state:"
+msgid "Posted"
+msgstr "lekönyvelt"
+
+msgctxt "view:account.bank.statement.journal:"
+msgid "Statement Journal"
+msgstr "Kivonatnapló"
+
+msgctxt "view:account.bank.statement.journal:"
+msgid "Statement Journals"
+msgstr "Kivonatnaplók"
+
+msgctxt "view:account.bank.statement.line:"
+msgid "Date"
+msgstr "Dátum"
+
+msgctxt "view:account.bank.statement:"
+msgid "Time"
+msgstr "Időpont"
+
+msgctxt "view:account.move.line:"
+msgid "Bank Amount"
+msgstr "Banki összeg"
+
+msgctxt "view:account.move.line:"
+msgid "Credit"
+msgstr "Követel"
+
+msgctxt "view:account.move.line:"
+msgid "Debit"
+msgstr "Tartozik"
+
+msgctxt "view:account.move.line:"
+msgid "Other Info"
+msgstr "Egyéb info"
+
+msgctxt "view:account.move.line:"
+msgid "Unreconciled Bank Amount"
+msgstr "Nem egyeztetett banki összeg"
+
+msgctxt "wizard_button:account.bank.statement.import,start,end:"
+msgid "Cancel"
+msgstr "Mégse"
+
+msgctxt "wizard_button:account.bank.statement.import,start,import_file:"
+msgid "Import File"
+msgstr "Fájl importálása"
+
+msgctxt "field:account.bank.reconciliation,amount:"
+msgid "Amount"
+msgstr "Összeg"
+
+msgctxt "field:account.bank.reconciliation,bank_statement_line:"
+msgid "Bank Statement Line"
+msgstr "Bankkivonat sora"
+
+msgctxt "field:account.move.open_bank_reconcile_lines.start,account:"
+msgid "Account"
+msgstr "Számla"
+
+msgctxt "model:account.bank.statement,string:"
+msgid "Account Bank Statement"
+msgstr "Bankkivonat"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_account_bank_statement_line_domain_draft"
+msgid "Draft"
+msgstr "vázlat"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_account_bank_statement_line_domain_confirmed"
+msgid "Confirmed"
+msgstr "jóváhagyott"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_account_bank_statement_line_domain_all"
+msgid "All"
+msgstr "összes"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_account_bank_statement_line_domain_cancelled"
+msgid "Cancelled"
+msgstr "érvénytelen"
+
+msgctxt "wizard_button:account.move.open_bank_reconcile_lines,start,end:"
+msgid "Cancel"
+msgstr "Mégse"
