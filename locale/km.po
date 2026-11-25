@@ -1,0 +1,537 @@
+#
+msgid ""
+msgstr ""
+"Language: km\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgctxt "field:account.account,bank_reconcile:"
+msgid "Bank Conciliation"
+msgstr "ការផ្ទៀងផ្ទាត់សមតុល្យធនាគារ"
+
+msgctxt "field:account.account.template,bank_reconcile:"
+msgid "Bank Conciliation"
+msgstr "ការផ្ទៀងផ្ទាត់សមតុល្យធនាគារ"
+
+msgctxt "field:account.bank.statement,company:"
+msgid "Company"
+msgstr "ក្រុមហ៊ុន"
+
+msgctxt "field:account.bank.statement,currency:"
+msgid "Currency"
+msgstr "រូបិយប័ណ្ណ"
+
+msgctxt "field:account.bank.statement,date:"
+msgid "Date"
+msgstr "កាលបរិច្ឆេទ"
+
+msgctxt "field:account.bank.statement,end_balance:"
+msgid "End Balance"
+msgstr "សមតុល្យចុងគ្រា"
+
+msgctxt "field:account.bank.statement,end_date:"
+msgid "End Date"
+msgstr "កាលបរិច្ឆេទបញ្ចប់"
+
+msgctxt "field:account.bank.statement,journal:"
+msgid "Journal"
+msgstr "ទិនានុប្បវត្តិ"
+
+msgctxt "field:account.bank.statement,lines:"
+msgid "Lines"
+msgstr "បន្ទាត់"
+
+msgctxt "field:account.bank.statement,start_balance:"
+msgid "Start Balance"
+msgstr "សមតុល្យដើមគ្រា"
+
+msgctxt "field:account.bank.statement,start_date:"
+msgid "Start Date"
+msgstr "កាលបរិច្ឆេទចាប់ផ្តើម"
+
+msgctxt "field:account.bank.statement,state:"
+msgid "State"
+msgstr "ស្ថានភាព"
+
+msgctxt "field:account.bank.statement.import.start,attachment:"
+msgid "Attach file after import"
+msgstr "ភ្ជាប់ឯកសារបន្ទាប់ពីនាំចូល"
+
+msgctxt "field:account.bank.statement.import.start,confirm:"
+msgid "Confirm"
+msgstr "បញ្ជាក់"
+
+msgctxt "field:account.bank.statement.import.start,import_file:"
+msgid "File"
+msgstr "ឯកសារ"
+
+msgctxt "field:account.bank.statement.import.start,type:"
+msgid "Type"
+msgstr "ប្រភេទ"
+
+msgctxt "field:account.bank.statement.journal,account:"
+msgid "Account"
+msgstr "គណនី"
+
+msgctxt "field:account.bank.statement.journal,company:"
+msgid "Company"
+msgstr "ក្រុមហ៊ុន"
+
+msgctxt "field:account.bank.statement.journal,currency:"
+msgid "Currency"
+msgstr "រូបិយប័ណ្ណ"
+
+msgctxt "field:account.bank.statement.journal,journal:"
+msgid "Journal"
+msgstr "ទិនានុប្បវត្តិ"
+
+msgctxt "field:account.bank.statement.journal,name:"
+msgid "Name"
+msgstr "ឈ្មោះ"
+
+msgctxt "field:account.bank.statement.line,account:"
+msgid "Account"
+msgstr "គណនី"
+
+msgctxt "field:account.bank.statement.line,amount:"
+msgid "Amount"
+msgstr "ចំនួនទឹកប្រាក់"
+
+msgctxt "field:account.bank.statement.line,company:"
+msgid "Company"
+msgstr "ក្រុមហ៊ុន"
+
+msgctxt "field:account.bank.statement.line,company_amount:"
+msgid "Company Amount"
+msgstr "ចំនួនទឹកប្រាក់ជារូបិយប័ណ្ណក្រុមហ៊ុន"
+
+msgctxt "field:account.bank.statement.line,company_currency:"
+msgid "Company Currency"
+msgstr "រូបិយប័ណ្ណក្រុមហ៊ុន"
+
+msgctxt "field:account.bank.statement.line,company_moves_amount:"
+msgid "Moves Amount"
+msgstr "ចំនួនទឹកប្រាក់នៃកំណត់ត្រាគណនេយ្យ"
+
+msgctxt "field:account.bank.statement.line,date:"
+msgid "Date"
+msgstr "កាលបរិច្ឆេទ"
+
+msgctxt "field:account.bank.statement.line,date_utc:"
+msgid "Date UTC"
+msgstr "កាលបរិច្ឆេទ UTC"
+
+msgctxt "field:account.bank.statement.line,description:"
+msgid "Description"
+msgstr "សេចក្តីពិពណ៌នា"
+
+msgctxt "field:account.bank.statement.line,journal:"
+msgid "Journal"
+msgstr "ទិនានុប្បវត្តិ"
+
+msgctxt "field:account.bank.statement.line,moves_amount:"
+msgid "Moves Amount"
+msgstr "ចំនួនទឹកប្រាក់នៃកំណត់ត្រាគណនេយ្យ"
+
+msgctxt "field:account.bank.statement.line,notes:"
+msgid "Notes"
+msgstr "កំណត់ចំណាំ"
+
+msgctxt "field:account.bank.statement.line,reconciled:"
+msgid "Reconciled"
+msgstr "បានផ្ទៀងផ្ទាត់សមតុល្យ"
+
+msgctxt "field:account.bank.statement.line,state:"
+msgid "State"
+msgstr "ស្ថានភាព"
+
+msgctxt "field:account.bank.statement.line,statement:"
+msgid "Statement"
+msgstr "របាយការណ៍"
+
+msgctxt "field:account.bank.statement.line,statement_currency:"
+msgid "Statement Currency"
+msgstr "រូបិយប័ណ្ណនៃរបាយការណ៍គណនី"
+
+msgctxt "help:account.bank.statement,date:"
+msgid "Created date bank statement"
+msgstr "កាលបរិច្ឆេទបង្កើតរបាយការណ៍គណនីធនាគារ"
+
+msgctxt "help:account.bank.statement,end_date:"
+msgid "End date bank statement"
+msgstr "កាលបរិច្ឆេទបញ្ចប់នៃរបាយការណ៍គណនីធនាគារ"
+
+msgctxt "help:account.bank.statement,start_date:"
+msgid "Start date bank statement"
+msgstr "កាលបរិច្ឆេទចាប់ផ្ដើមនៃរបាយការណ៍គណនីធនាគារ"
+
+msgctxt "help:account.bank.statement.import.start,confirm:"
+msgid "Confirm Bank Statement after import."
+msgstr "បញ្ជាក់របាយការណ៍គណនីធនាគារបន្ទាប់ពីនាំចូល។"
+
+msgctxt "model:account.bank.statement,name:"
+msgid "Bank Statement"
+msgstr "របាយការណ៍គណនីធនាគារ"
+
+msgctxt "model:account.bank.statement.import.start,name:"
+msgid "Import Start"
+msgstr "ចាប់ផ្ដើមនាំចូល"
+
+msgctxt "model:account.bank.statement.journal,name:"
+msgid "Bank Statement Journal"
+msgstr "ទិនានុប្បវត្តិរបាយការណ៍គណនីធនាគារ"
+
+msgctxt "model:account.bank.statement.line,name:"
+msgid "Bank Statement Line"
+msgstr "បន្ទាត់របាយការណ៍គណនីធនាគារ"
+
+msgctxt "model:ir.action,name:act_account_bank_statement"
+msgid "Bank Statement"
+msgstr "របាយការណ៍គណនីធនាគារ"
+
+msgctxt "model:ir.action,name:act_account_bank_statement_line"
+msgid "Bank Statement Line"
+msgstr "បន្ទាត់របាយការណ៍គណនីធនាគារ"
+
+msgctxt "model:ir.action,name:act_bank_statement_journal_form"
+msgid "Bank Statement Journals"
+msgstr "ទិនានុប្បវត្តិរបាយការណ៍គណនីធនាគារ"
+
+msgctxt "model:ir.action,name:act_bank_statement_lines"
+msgid "Statement Lines"
+msgstr "បន្ទាត់របាយការណ៍គណនី"
+
+msgctxt "model:ir.action,name:wizard_import"
+msgid "Import File"
+msgstr "នាំចូលឯកសារ"
+
+msgctxt "model:ir.action.act_window.domain,name:"
+msgid "All"
+msgstr "ទាំងអស់"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_account_bank_statement_domain_all"
+msgid "All"
+msgstr "ទាំងអស់"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_account_bank_statement_domain_cancelled"
+msgid "Cancelled"
+msgstr "បានបោះបង់"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_account_bank_statement_domain_confirmed"
+msgid "Confirmed"
+msgstr "បានបញ្ជាក់"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_account_bank_statement_domain_draft"
+msgid "Draft"
+msgstr "សេចក្តីព្រាង"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_account_bank_statement_line_domain_posted"
+msgid "Posted"
+msgstr "បានកត់ត្រាក្នុងបញ្ជីគណនេយ្យ"
+
+#, python-format
+msgctxt "model:ir.message,text:account_bank_statement_already_has_lines"
+msgid "Statement \"%(statement)s\" already has lines."
+msgstr "របាយការណ៍គណនី «%(statement)s» មានបន្ទាត់រួចហើយ។"
+
+#, python-format
+msgctxt "model:ir.message,text:cannot_cancel_statement_line"
+msgid "Line \"%(line)s\" cannot be cancelled."
+msgstr "មិនអាចបោះបង់បន្ទាត់ «%(line)s» បានទេ។"
+
+#, python-format
+msgctxt "model:ir.message,text:cannot_delete_statement"
+msgid "Statement \"%(statement)s\" cannot be deleted because it contains lines."
+msgstr "មិនអាចលុបរបាយការណ៍គណនី «%(statement)s» បានទេ ព្រោះវាមានបន្ទាត់។"
+
+#, python-format
+msgctxt "model:ir.message,text:cannot_delete_statement_line"
+msgid ""
+"Line \"%(line)s\" cannot be deleted because it is not in Draft or Cancelled "
+"state."
+msgstr ""
+"មិនអាចលុបបន្ទាត់ «%(line)s» បានទេ "
+"ព្រោះបន្ទាត់នេះមិនស្ថិតក្នុងស្ថានភាពសេចក្តីព្រាង ឬបានបោះបង់។"
+
+#, python-format
+msgctxt "model:ir.message,text:currency_modify"
+msgid ""
+"You cannot modify the currency to journal that already has a statement on "
+"date %(date)s"
+msgstr ""
+"មិនអាចកែប្រែរូបិយប័ណ្ណរបស់ទិនានុប្បវត្តិដែលមានរបាយការណ៍គណនីរួចហើយនៅកាលបរិច្ឆេទ"
+" %(date)s បានទេ។"
+
+#, python-format
+msgctxt "model:ir.message,text:different_amounts"
+msgid ""
+"Moves Amount \"%(moves_amount)s\" does not match Amount \"%(amount)s\" in "
+"line \"%(line)s\"."
+msgstr ""
+"ចំនួនទឹកប្រាក់នៃកំណត់ត្រាគណនេយ្យ «%(moves_amount)s» មិនត្រូវនឹងចំនួនទឹកប្រាក់"
+" «%(amount)s» ក្នុងបន្ទាត់ «%(line)s»។"
+
+#, python-format
+msgctxt "model:ir.message,text:format_error"
+msgid ""
+"The supplied file does not have the expected format.\n"
+"This is the technical error returned by parser:\n"
+"%(error)s."
+msgstr ""
+"ឯកសារដែលបានផ្ដល់មានទ្រង់ទ្រាយខុសពីការរំពឹងទុក។\n"
+"កំហុសបច្ចេកទេសពីកម្មវិធីអានទិន្នន័យ៖\n"
+"%(error)s។"
+
+#, python-format
+msgctxt "model:ir.message,text:invalid_account_payment_type"
+msgid ""
+"Can not set Payment Type in move line \"%(payment)s\" because account is not "
+"Payable nor Receivable."
+msgstr ""
+"មិនអាចកំណត់ប្រភេទការទូទាត់ក្នុងបន្ទាត់កំណត់ត្រា «%(payment)s» បានទេ "
+"ព្រោះគណនីនេះមិនមែនជាគណនីត្រូវទូទាត់ ឬគណនីត្រូវទទួល។"
+
+#, python-format
+msgctxt "model:ir.message,text:invalid_date"
+msgid "Invalid string for date: %(date)s"
+msgstr "ខ្សែអក្សរកាលបរិច្ឆេទមិនត្រឹមត្រូវ៖ %(date)s"
+
+#, python-format
+msgctxt "model:ir.message,text:invalid_number"
+msgid "Invalid string for number: %(number)s"
+msgstr "ខ្សែអក្សរលេខមិនត្រឹមត្រូវ៖ %(number)s"
+
+#, python-format
+msgctxt "model:ir.message,text:line_reconciled"
+msgid ""
+"Line \"%(line)s\" already reconciled with bank statement line "
+"\"%(statment_line)s\" with amount \"%(amount)s\". Please remove bank "
+"conciliation and try again."
+msgstr ""
+"បន្ទាត់ «%(line)s» "
+"ត្រូវបានផ្ទៀងផ្ទាត់សមតុល្យរួចហើយជាមួយបន្ទាត់របាយការណ៍គណនីធនាគារ "
+"«%(statment_line)s» ក្នុងចំនួនទឹកប្រាក់ «%(amount)s»។ "
+"សូមលុបការផ្ទៀងផ្ទាត់សមតុល្យធនាគារ រួចព្យាយាមម្តងទៀត។"
+
+#, python-format
+msgctxt "model:ir.message,text:missing_columns"
+msgid "Missing columns in line: %(columns)s"
+msgstr "បាត់ជួរឈរក្នុងបន្ទាត់៖ %(columns)s"
+
+#, python-format
+msgctxt "model:ir.message,text:modifiy_with_related_model"
+msgid ""
+"It is not possible to modify the field \"%(field)s\" as the payment type "
+"\"%(type)s\" is used on %(model)s \"%(name)s\""
+msgstr ""
+"មិនអាចកែប្រែវាល «%(field)s» បានទេ ព្រោះប្រភេទការទូទាត់ «%(type)s» "
+"ត្រូវបានប្រើក្នុង %(model)s «%(name)s»។"
+
+msgctxt "model:ir.message,text:statement_already_has_lines"
+msgid ""
+"You cannot import a bank statement file in a bank  statement with lines."
+msgstr ""
+"មិនអាចនាំចូលឯកសាររបាយការណ៍គណនីធនាគារទៅក្នុងរបាយការណ៍ដែលមានបន្ទាត់រួចហើយបានទេ។"
+
+msgctxt "model:ir.message,text:unicode_error"
+msgid ""
+"The supplied file has Unicode Error and can not load. Check that the file is "
+"utf-8."
+msgstr ""
+"ឯកសារដែលបានផ្ដល់មានកំហុស Unicode ហើយមិនអាចផ្ទុកបានទេ។ "
+"សូមពិនិត្យថាឯកសារប្រើកូដអក្សរ utf-8។"
+
+msgctxt "model:ir.model.button,string:statement_cancel_button"
+msgid "Cancel"
+msgstr "បោះបង់"
+
+msgctxt "model:ir.model.button,string:statement_confirm_button"
+msgid "Confirm"
+msgstr "បញ្ជាក់"
+
+msgctxt "model:ir.model.button,string:statement_draft_button"
+msgid "Draft"
+msgstr "សេចក្តីព្រាង"
+
+msgctxt "model:ir.model.button,string:statement_line_cancel_button"
+msgid "Cancel"
+msgstr "បោះបង់"
+
+msgctxt "model:ir.model.button,string:statement_line_confirm_button"
+msgid "Confirm"
+msgstr "បញ្ជាក់"
+
+msgctxt "model:ir.model.button,string:statement_line_draft_button"
+msgid "Draft"
+msgstr "សេចក្តីព្រាង"
+
+msgctxt "model:ir.model.button,string:statement_line_post_button"
+msgid "Post"
+msgstr "កត់ត្រាក្នុងបញ្ជីគណនេយ្យ"
+
+msgctxt "model:ir.model.button,string:statement_search_reconcile_button"
+msgid "Search"
+msgstr "ស្វែងរក"
+
+msgctxt "model:ir.rule.group,name:rule_group_bank_statement"
+msgid "Bank Statement"
+msgstr "របាយការណ៍គណនីធនាគារ"
+
+msgctxt "model:ir.rule.group,name:rule_group_bank_statement_journal"
+msgid "Bank statement Journal"
+msgstr "ទិនានុប្បវត្តិរបាយការណ៍គណនីធនាគារ"
+
+msgctxt "model:ir.rule.group,name:rule_group_bank_statement_line"
+msgid "Bank Statement Line"
+msgstr "បន្ទាត់របាយការណ៍គណនីធនាគារ"
+
+msgctxt "model:ir.ui.menu,name:menu_account_bank_statement"
+msgid "Bank Statements"
+msgstr "របាយការណ៍គណនីធនាគារ"
+
+msgctxt "model:ir.ui.menu,name:menu_account_bank_statement_line"
+msgid "Bank Statement Lines"
+msgstr "បន្ទាត់របាយការណ៍គណនីធនាគារ"
+
+msgctxt "model:ir.ui.menu,name:menu_bank_statement_configuration"
+msgid "Bank Statements"
+msgstr "របាយការណ៍គណនីធនាគារ"
+
+msgctxt "model:ir.ui.menu,name:menu_bank_statement_journal_form"
+msgid "Bank Statement Journals"
+msgstr "ទិនានុប្បវត្តិរបាយការណ៍គណនីធនាគារ"
+
+msgctxt "model:ir.ui.menu,name:menu_bank_statements"
+msgid "Bank Statements"
+msgstr "របាយការណ៍គណនីធនាគារ"
+
+msgctxt "model:res.group,name:group_account_bank_statement"
+msgid "Account Bank Statement"
+msgstr "របាយការណ៍គណនីធនាគារ"
+
+msgctxt "model:res.group,name:group_account_bank_statement_admin"
+msgid "Account Bank Statement Administration"
+msgstr "ការគ្រប់គ្រងរបាយការណ៍គណនីធនាគារ"
+
+msgctxt "selection:account.bank.statement,state:"
+msgid "Cancelled"
+msgstr "បានបោះបង់"
+
+msgctxt "selection:account.bank.statement,state:"
+msgid "Confirmed"
+msgstr "បានបញ្ជាក់"
+
+msgctxt "selection:account.bank.statement,state:"
+msgid "Draft"
+msgstr "សេចក្តីព្រាង"
+
+msgctxt "selection:account.bank.statement.import.start,type:"
+msgid "CSV (date, description, amount)"
+msgstr "CSV (កាលបរិច្ឆេទ សេចក្តីពិពណ៌នា ចំនួនទឹកប្រាក់)"
+
+msgctxt "selection:account.bank.statement.line,state:"
+msgid "Cancelled"
+msgstr "បានបោះបង់"
+
+msgctxt "selection:account.bank.statement.line,state:"
+msgid "Confirmed"
+msgstr "បានបញ្ជាក់"
+
+msgctxt "selection:account.bank.statement.line,state:"
+msgid "Draft"
+msgstr "សេចក្តីព្រាង"
+
+msgctxt "selection:account.bank.statement.line,state:"
+msgid "Posted"
+msgstr "បានកត់ត្រាក្នុងបញ្ជីគណនេយ្យ"
+
+msgctxt "view:account.bank.statement.journal:"
+msgid "Statement Journal"
+msgstr "ទិនានុប្បវត្តិរបាយការណ៍"
+
+msgctxt "view:account.bank.statement.journal:"
+msgid "Statement Journals"
+msgstr "ទិនានុប្បវត្តិរបាយការណ៍"
+
+msgctxt "view:account.bank.statement.line:"
+msgid "Date"
+msgstr "កាលបរិច្ឆេទ"
+
+msgctxt "view:account.bank.statement:"
+msgid "Time"
+msgstr "ពេលវេលា"
+
+msgctxt "view:account.move.line:"
+msgid "Bank Amount"
+msgstr "ចំនួនទឹកប្រាក់ធនាគារ"
+
+msgctxt "view:account.move.line:"
+msgid "Credit"
+msgstr "ឥណទាន"
+
+msgctxt "view:account.move.line:"
+msgid "Debit"
+msgstr "ឥណពន្ធ"
+
+msgctxt "view:account.move.line:"
+msgid "Other Info"
+msgstr "ព័ត៌មានផ្សេងទៀត"
+
+msgctxt "view:account.move.line:"
+msgid "Unreconciled Bank Amount"
+msgstr "ចំនួនទឹកប្រាក់ធនាគារដែលមិនទាន់ផ្ទៀងផ្ទាត់សមតុល្យ"
+
+msgctxt "wizard_button:account.bank.statement.import,start,end:"
+msgid "Cancel"
+msgstr "បោះបង់"
+
+msgctxt "wizard_button:account.bank.statement.import,start,import_file:"
+msgid "Import File"
+msgstr "នាំចូលឯកសារ"
+
+msgctxt "field:account.bank.reconciliation,amount:"
+msgid "Amount"
+msgstr "ចំនួនទឹកប្រាក់"
+
+msgctxt "field:account.bank.reconciliation,bank_statement_line:"
+msgid "Bank Statement Line"
+msgstr "បន្ទាត់របាយការណ៍គណនីធនាគារ"
+
+msgctxt "field:account.move.open_bank_reconcile_lines.start,account:"
+msgid "Account"
+msgstr "គណនី"
+
+msgctxt "model:account.bank.statement,string:"
+msgid "Account Bank Statement"
+msgstr "របាយការណ៍គណនីធនាគារ"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_account_bank_statement_line_domain_draft"
+msgid "Draft"
+msgstr "សេចក្តីព្រាង"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_account_bank_statement_line_domain_confirmed"
+msgid "Confirmed"
+msgstr "បានបញ្ជាក់"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_account_bank_statement_line_domain_all"
+msgid "All"
+msgstr "ទាំងអស់"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_account_bank_statement_line_domain_cancelled"
+msgid "Cancelled"
+msgstr "បានបោះបង់"
+
+msgctxt "wizard_button:account.move.open_bank_reconcile_lines,start,end:"
+msgid "Cancel"
+msgstr "បោះបង់"
